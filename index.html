@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MythosTree — Greek Mythology Lineage & Archive</title>
+  <meta name="description" content="Interactive genealogical explorer and archive of Greek mythological deities, titans, primordials, heroes, and mortals.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Cosmic Glow Background -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-center" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#/character/61" class="logo" id="logo-link" title="MythosTree Home">
+        <span class="logo-icon">⚡</span>
+        <div class="logo-text">
+          <span class="brand-title">MythosTree</span>
+          <span class="brand-subtitle">Genealogy & Archive</span>
+        </div>
+      </a>
+
+      <!-- Quick Stats / All Characters Directory Pill -->
+      <div class="header-center">
+        <a href="#/all" class="stats-pill stats-btn" id="stats-pill" title="View All Characters Archive & Directory">
+          <span class="stats-dot"></span>
+          <span id="stats-count">Loading deities...</span>
+        </a>
+      </div>
+
+      <!-- Header Controls (Search & Actions) -->
+      <div class="header-actions">
+        <!-- Path Finder Button -->
+        <button id="btn-path-finder" class="btn-icon-label" title="Find kinship path between two characters">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="18" cy="18" r="3"></circle>
+            <path d="M6 9v3a3 3 0 0 0 3 3h6"></path>
+          </svg>
+          <span class="btn-label">Kinship Path</span>
+        </button>
+
+        <!-- Random Character Button -->
+        <button id="btn-random" class="btn-icon-label" title="Random mythological figure">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <circle cx="15.5" cy="15.5" r="1.5"></circle>
+            <circle cx="15.5" cy="8.5" r="1.5"></circle>
+            <circle cx="8.5" cy="15.5" r="1.5"></circle>
+          </svg>
+          <span class="btn-label">Random</span>
+        </button>
+
+        <!-- Search Bar -->
+        <div class="search-wrapper" id="search-wrapper">
+          <div class="search-input-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Search gods, titans, mortals..." 
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="Search Greek Mythology"
+            >
+            <kbd class="search-kbd" id="search-kbd">/</kbd>
+          </div>
+          <!-- Live Search Dropdown -->
+          <div class="search-dropdown hidden" id="search-dropdown" role="listbox"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container" id="main-content">
+    <!-- Dynamic View Injected by Router -->
+    <div id="view-container" class="view-container">
+      <div class="loading-spinner">
+        <div class="spinner-ring"></div>
+        <p>Awakening the Pantheon...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Kinship Path Finder Modal -->
+  <div class="modal-backdrop hidden" id="path-modal" role="dialog" aria-modal="true" aria-labelledby="path-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-icon">🏛️</span>
+          <h2 id="path-modal-title">Ancestry & Kinship Path Finder</h2>
+        </div>
+        <button class="modal-close-btn" id="btn-close-path-modal" aria-label="Close modal">&times;</button>
+      </div>
+      <p class="modal-subtitle">Find the shortest genealogical chain connecting any two figures in the mythos.</p>
+
+      <form id="path-form" class="path-form" onsubmit="return false;">
+        <div class="path-inputs-grid">
+          <div class="path-input-col">
+            <label for="path-start-input">Character A</label>
+            <div class="select-wrapper">
+              <input type="text" id="path-start-input" placeholder="e.g. Zeus, Achilles, Nyx..." autocomplete="off">
+              <div class="path-suggest hidden" id="path-start-suggest"></div>
+            </div>
+          </div>
+          <div class="path-connector-icon">
+            <span>⇄</span>
+          </div>
+          <div class="path-input-col">
+            <label for="path-end-input">Character B</label>
+            <div class="select-wrapper">
+              <input type="text" id="path-end-input" placeholder="e.g. Perseus, Gaia, Minos..." autocomplete="off">
+              <div class="path-suggest hidden" id="path-end-suggest"></div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" id="btn-find-path" class="btn-primary">
+          <span>Trace Kinship Path</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+
+      <div class="path-results hidden" id="path-results"></div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>MythosTree &bull; Classical Greek Mythology Lineage Archive &bull; Built with pure HTML5, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Local fallback data wrapper for direct file:// browser support -->
+  <script src="data/characters.js"></script>
+  <!-- Application Core Script -->
+  <script src="app.js"></script>
+</body>
+</html>

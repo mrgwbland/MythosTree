@@ -1,0 +1,3018 @@
+[
+  {
+    "ID": 1,
+    "Name": "Erebus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Erebus",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, darkness"
+  },
+  {
+    "ID": 2,
+    "Name": "Nyx",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nyx",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, night"
+  },
+  {
+    "ID": 3,
+    "Name": "Gaia",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Gaia",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, Earth"
+  },
+  {
+    "ID": 4,
+    "Name": "Tartarus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Tartarus",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, dungeon of the damned"
+  },
+  {
+    "ID": 5,
+    "Name": "Pontus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pontus",
+    "Category": [
+      "Primordial",
+      "God"
+    ],
+    "Description": "Primordial being, sea god"
+  },
+  {
+    "ID": 6,
+    "Name": "Ouranos",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Uranus_(mythology)",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, father sky"
+  },
+  {
+    "ID": 7,
+    "Name": "Oceanus",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Oceanus",
+    "Category": [
+      "Titan",
+      "Potamoi",
+      "God"
+    ],
+    "Description": "Titan, god of the river Oceanos"
+  },
+  {
+    "ID": 8,
+    "Name": "Coeus",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Coeus",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan"
+  },
+  {
+    "ID": 9,
+    "Name": "Crius",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Crius",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan"
+  },
+  {
+    "ID": 10,
+    "Name": "Hemera",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hemera",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, day"
+  },
+  {
+    "ID": 11,
+    "Name": "Aether",
+    "Gender": "Male",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aether",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, light"
+  },
+  {
+    "ID": 12,
+    "Name": "Thalassa",
+    "Gender": "Female",
+    "FatherID": 11,
+    "MotherID": 10,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thalassa",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Primordial being, the sea"
+  },
+  {
+    "ID": 13,
+    "Name": "Hyperion",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hyperion",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan, the Sun"
+  },
+  {
+    "ID": 14,
+    "Name": "Iapetus",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Iapetus",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan"
+  },
+  {
+    "ID": 15,
+    "Name": "Kronos",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cronus",
+    "Category": [
+      "Titan",
+      "God"
+    ],
+    "Description": "Titan, god of harvest, and ruler of existence, for a t"
+  },
+  {
+    "ID": 16,
+    "Name": "Theia",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Theia",
+    "Category": [
+      "Titan",
+      "Goddess"
+    ],
+    "Description": "Titan, goddess of sight"
+  },
+  {
+    "ID": 17,
+    "Name": "Themis",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Themis",
+    "Category": [
+      "Titan",
+      "Goddess"
+    ],
+    "Description": "Titan, goddess of justice and law"
+  },
+  {
+    "ID": 18,
+    "Name": "Mnemosyne",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Mnemosyne",
+    "Category": [
+      "Titan",
+      "Goddess"
+    ],
+    "Description": "Titan, goddess of memory"
+  },
+  {
+    "ID": 19,
+    "Name": "Phoebe",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phoebe",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan"
+  },
+  {
+    "ID": 20,
+    "Name": "Tethys",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Tethys",
+    "Category": [
+      "Titan",
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Titan, mother of the Oceanids"
+  },
+  {
+    "ID": 21,
+    "Name": "Rhea",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Rhea",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan, consort of Kronos"
+  },
+  {
+    "ID": 22,
+    "Name": "Brontes",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Brontes",
+    "Category": [
+      "Cyclopes"
+    ],
+    "Description": "One of the Cyclopes- Thunder"
+  },
+  {
+    "ID": 23,
+    "Name": "Steropes",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Steropes",
+    "Category": [
+      "Cyclopes"
+    ],
+    "Description": "One of the Cyclopes- Lightning"
+  },
+  {
+    "ID": 24,
+    "Name": "Arges",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Arges",
+    "Category": [
+      "Cyclopes"
+    ],
+    "Description": "One of the Cyclopes- Bright"
+  },
+  {
+    "ID": 25,
+    "Name": "Cottus",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cottus",
+    "Category": [
+      "Hecatoncheires"
+    ],
+    "Description": "One of the Hecantonchires"
+  },
+  {
+    "ID": 26,
+    "Name": "Gyges",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Gyges",
+    "Category": [
+      "Hecatoncheires"
+    ],
+    "Description": "One of the Hecantonchires"
+  },
+  {
+    "ID": 27,
+    "Name": "Aegaeon",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aegaeon",
+    "Category": [
+      "Hecatoncheires"
+    ],
+    "Description": "One of the Hecantonchires, also called Briareus"
+  },
+  {
+    "ID": 28,
+    "Name": "Nilus",
+    "Gender": "Male",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nilus_(mythology)",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of the Nile"
+  },
+  {
+    "ID": 29,
+    "Name": "Clymene",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Clymene_(Oceanid)",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Two oceanids share the same name, but I only realised"
+  },
+  {
+    "ID": 30,
+    "Name": "Metis",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Metis_(mythology)",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of wisdom and deep thought, later inhabitant o"
+  },
+  {
+    "ID": 31,
+    "Name": "Helios",
+    "Gender": "Male",
+    "FatherID": 13,
+    "MotherID": 16,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Helios",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan, charioteer of the Sun"
+  },
+  {
+    "ID": 32,
+    "Name": "Selene",
+    "Gender": "Female",
+    "FatherID": 13,
+    "MotherID": 16,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Selene",
+    "Category": [
+      "Titaness"
+    ],
+    "Description": "Titaness moon charioteer"
+  },
+  {
+    "ID": 33,
+    "Name": "Eos",
+    "Gender": "Female",
+    "FatherID": 13,
+    "MotherID": 16,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eos",
+    "Category": [
+      "Titaness",
+      "Goddess"
+    ],
+    "Description": "Titaness goddess of the dawn"
+  },
+  {
+    "ID": 34,
+    "Name": "Eurybia",
+    "Gender": "Female",
+    "FatherID": 5,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurybia",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of mastery of the seas. (sailing etc?)"
+  },
+  {
+    "ID": 35,
+    "Name": "Atlas",
+    "Gender": "Male",
+    "FatherID": 14,
+    "MotherID": 29,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Atlas_(mythology)",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan, sentanced to hold up the sky."
+  },
+  {
+    "ID": 36,
+    "Name": "Epimetheus",
+    "Gender": "Male",
+    "FatherID": 14,
+    "MotherID": 29,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Epimetheus",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan of afterthought"
+  },
+  {
+    "ID": 37,
+    "Name": "Prometheus",
+    "Gender": "Male",
+    "FatherID": 14,
+    "MotherID": 29,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Prometheus",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Titan of foresight, sculptor of man, also gave man div"
+  },
+  {
+    "ID": 38,
+    "Name": "Typhon",
+    "Gender": "Male",
+    "FatherID": 4,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Typhon",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "Monstrous serpent"
+  },
+  {
+    "ID": 39,
+    "Name": "Moros",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Moros",
+    "Category": [
+      "Moirai"
+    ],
+    "Description": "Doom itself.(Or more optimistically, fate) Even feared"
+  },
+  {
+    "ID": 40,
+    "Name": "Apate",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Apate",
+    "Category": [],
+    "Description": "Deceit"
+  },
+  {
+    "ID": 41,
+    "Name": "Geras",
+    "Gender": "Male",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Geras",
+    "Category": [],
+    "Description": "Old age"
+  },
+  {
+    "ID": 42,
+    "Name": "Oizys",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Oizys",
+    "Category": [],
+    "Description": "Misery"
+  },
+  {
+    "ID": 43,
+    "Name": "Momos",
+    "Gender": "Male",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Momos",
+    "Category": [],
+    "Description": "Mockery"
+  },
+  {
+    "ID": 44,
+    "Name": "Eris",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eris_(mythology)",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of strife and discord"
+  },
+  {
+    "ID": 45,
+    "Name": "Nemesis",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nemesis",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess who enacts retribution against those who show"
+  },
+  {
+    "ID": 46,
+    "Name": "Charon",
+    "Gender": "Male",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Charon",
+    "Category": [],
+    "Description": "Ferryman of Hades, takes souls over the Styx"
+  },
+  {
+    "ID": 47,
+    "Name": "Hypnos",
+    "Gender": "Male",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hypnos",
+    "Category": [],
+    "Description": "Sleep"
+  },
+  {
+    "ID": 48,
+    "Name": "Phobetor",
+    "Gender": "Male",
+    "FatherID": 47,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phobetor",
+    "Category": [],
+    "Description": "Being that creates nightmares"
+  },
+  {
+    "ID": 49,
+    "Name": "Phantasos",
+    "Gender": "Male",
+    "FatherID": 47,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phantasos",
+    "Category": [],
+    "Description": "Being that appears as inanimate objects in dreams"
+  },
+  {
+    "ID": 50,
+    "Name": "Morpheus",
+    "Gender": "Male",
+    "FatherID": 47,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Morpheus",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of dreams"
+  },
+  {
+    "ID": 51,
+    "Name": "Thanatos",
+    "Gender": "Male",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thanatos",
+    "Category": [],
+    "Description": "Death"
+  },
+  {
+    "ID": 52,
+    "Name": "Aphrodite",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aphrodite",
+    "Category": [
+      "Olympian",
+      "Goddess"
+    ],
+    "Description": "Olympian goddess of love"
+  },
+  {
+    "ID": 53,
+    "Name": "Hestia",
+    "Gender": "Female",
+    "FatherID": 15,
+    "MotherID": 21,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hestia",
+    "Category": [
+      "Olympian",
+      "Goddess"
+    ],
+    "Description": "Goddess of the hearth and home, was an olympian until"
+  },
+  {
+    "ID": 54,
+    "Name": "Hades",
+    "Gender": "Male",
+    "FatherID": 15,
+    "MotherID": 21,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hades",
+    "Category": [
+      "Mortal",
+      "Royalty",
+      "God"
+    ],
+    "Description": "God of dead and king of the underworld"
+  },
+  {
+    "ID": 55,
+    "Name": "Demeter",
+    "Gender": "Female",
+    "FatherID": 15,
+    "MotherID": 21,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Demeter",
+    "Category": [
+      "Olympian",
+      "Goddess"
+    ],
+    "Description": "Olympian goddess of harvest and agriculture"
+  },
+  {
+    "ID": 56,
+    "Name": "Poseidon",
+    "Gender": "Male",
+    "FatherID": 15,
+    "MotherID": 21,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Poseidon",
+    "Category": [
+      "Olympian",
+      "God"
+    ],
+    "Description": "Olympian god of the sea"
+  },
+  {
+    "ID": 57,
+    "Name": "Hera",
+    "Gender": "Female",
+    "FatherID": 15,
+    "MotherID": 21,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hera",
+    "Category": [
+      "Olympian",
+      "Goddess"
+    ],
+    "Description": "Olympian goddess of mariage, women and childbirth, con"
+  },
+  {
+    "ID": 58,
+    "Name": "Alecto",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Alecto",
+    "Category": [
+      "Erinyes",
+      "Mortal"
+    ],
+    "Description": "One of the furies, punishers of mortal oathbreakers"
+  },
+  {
+    "ID": 59,
+    "Name": "Megaera",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Megaera",
+    "Category": [
+      "Erinyes",
+      "Mortal"
+    ],
+    "Description": "One of the furies, punishers of mortal oathbreakers"
+  },
+  {
+    "ID": 60,
+    "Name": "Tisiphone",
+    "Gender": "Female",
+    "FatherID": 6,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Tisiphone",
+    "Category": [
+      "Erinyes",
+      "Mortal"
+    ],
+    "Description": "One of the furies, punishers of mortal oathbreakers"
+  },
+  {
+    "ID": 61,
+    "Name": "Zeus",
+    "Gender": "Male",
+    "FatherID": 15,
+    "MotherID": 21,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Zeus",
+    "Category": [
+      "Olympian",
+      "Mortal",
+      "Royalty",
+      "God"
+    ],
+    "Description": "Olympian god of the sky, king of the gods and creation"
+  },
+  {
+    "ID": 62,
+    "Name": "Calliope",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Calliope",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of epic poetry"
+  },
+  {
+    "ID": 63,
+    "Name": "Clio",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Clio",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of history and the lyre"
+  },
+  {
+    "ID": 64,
+    "Name": "Erato",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Erato",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of erotic and lyrical poetry"
+  },
+  {
+    "ID": 65,
+    "Name": "Euterpe",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Euterpe",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of lyric poetry"
+  },
+  {
+    "ID": 66,
+    "Name": "Melpomene",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Melpomene",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of tragedy"
+  },
+  {
+    "ID": 67,
+    "Name": "Polyhymnia",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Polyhymnia",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of hymns"
+  },
+  {
+    "ID": 68,
+    "Name": "Terpsichore",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Terpsichore",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of dancing and chorus"
+  },
+  {
+    "ID": 69,
+    "Name": "Thalia",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thalia_(Muse)",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of comedy"
+  },
+  {
+    "ID": 70,
+    "Name": "Urania",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 18,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Urania",
+    "Category": [
+      "Muse",
+      "Goddess"
+    ],
+    "Description": "One of the muses, goddess of astronomy"
+  },
+  {
+    "ID": 71,
+    "Name": "Eurynome",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurynome",
+    "Category": [
+      "Charites",
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Oceanid, mother of the charites"
+  },
+  {
+    "ID": 72,
+    "Name": "Aglaea",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 71,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aglaea",
+    "Category": [
+      "Charites",
+      "Goddess"
+    ],
+    "Description": "One of the charites \"shining\", goddess of grace and ch"
+  },
+  {
+    "ID": 73,
+    "Name": "Euphrosyne",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 71,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Euphrosyne",
+    "Category": [
+      "Charites",
+      "Goddess"
+    ],
+    "Description": "One of the charites \"joy\", goddess of joy."
+  },
+  {
+    "ID": 74,
+    "Name": "Thalia",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 71,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thalia_(Grace)",
+    "Category": [
+      "Charites",
+      "Goddess"
+    ],
+    "Description": "One of the charites \"blooming\", goddess of festivity a"
+  },
+  {
+    "ID": 75,
+    "Name": "Auxesia",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 17,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Auxesia",
+    "Category": [
+      "Horae",
+      "Goddess"
+    ],
+    "Description": "One of the horae (goddesses of seasons), goddess of su"
+  },
+  {
+    "ID": 76,
+    "Name": "Carpo",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 17,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Carpo",
+    "Category": [
+      "Horae",
+      "Goddess"
+    ],
+    "Description": "One of the horae (goddesses of seasons), goddess of au"
+  },
+  {
+    "ID": 77,
+    "Name": "Thallo",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 17,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thallo",
+    "Category": [
+      "Horae",
+      "Goddess"
+    ],
+    "Description": "One of the horae (goddesses of seasons), goddess of sp"
+  },
+  {
+    "ID": 78,
+    "Name": "Eunomia",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 17,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eunomia",
+    "Category": [
+      "Horae",
+      "Goddess"
+    ],
+    "Description": "One of the horae, goddess of law and legislation."
+  },
+  {
+    "ID": 79,
+    "Name": "Dike",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 17,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Dike",
+    "Category": [
+      "Horae",
+      "Goddess"
+    ],
+    "Description": "One of the horae, goddess of moral justice."
+  },
+  {
+    "ID": 80,
+    "Name": "Eirene",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 17,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eirene",
+    "Category": [
+      "Horae",
+      "Goddess"
+    ],
+    "Description": "One of the horae, goddess of peace."
+  },
+  {
+    "ID": 81,
+    "Name": "Clotho",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Clotho",
+    "Category": [
+      "Moirai"
+    ],
+    "Description": "One of the three fates, Clotho spins the thread of lif"
+  },
+  {
+    "ID": 82,
+    "Name": "Lachesis",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Lachesis",
+    "Category": [
+      "Moirai"
+    ],
+    "Description": "One of the three fates, Lachesis draws out the thread"
+  },
+  {
+    "ID": 83,
+    "Name": "Atropos",
+    "Gender": "Female",
+    "FatherID": 1,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Atropos",
+    "Category": [
+      "Moirai"
+    ],
+    "Description": "One of the three fates, Atropos cuts the thread of lif"
+  },
+  {
+    "ID": 84,
+    "Name": "Phorcys",
+    "Gender": "Male",
+    "FatherID": 5,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phorcys",
+    "Category": [
+      "God"
+    ],
+    "Description": "A fish tailed and crab skinned sea god."
+  },
+  {
+    "ID": 85,
+    "Name": "Ceto",
+    "Gender": "Female",
+    "FatherID": 5,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ceto",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Sea goddess"
+  },
+  {
+    "ID": 86,
+    "Name": "Stheno",
+    "Gender": "Female",
+    "FatherID": 84,
+    "MotherID": 85,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Stheno",
+    "Category": [
+      "Gorgon"
+    ],
+    "Description": "One of the gorgons, snake headed sisters whos' gaze tu"
+  },
+  {
+    "ID": 87,
+    "Name": "Euryale",
+    "Gender": "Female",
+    "FatherID": 84,
+    "MotherID": 85,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Euryale",
+    "Category": [
+      "Gorgon"
+    ],
+    "Description": "One of the gorgons, snake headed sisters whos' gaze tu"
+  },
+  {
+    "ID": 88,
+    "Name": "Medusa",
+    "Gender": "Female",
+    "FatherID": 84,
+    "MotherID": 85,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Medusa",
+    "Category": [
+      "Gorgon"
+    ],
+    "Description": "One of the gorgons, snake headed sisters whos' gaze tu"
+  },
+  {
+    "ID": 89,
+    "Name": "Menoetius",
+    "Gender": "Male",
+    "FatherID": 14,
+    "MotherID": 29,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Menoetius",
+    "Category": [
+      "Titan"
+    ],
+    "Description": "Violent and powerful titan, sent to tartarus after the"
+  },
+  {
+    "ID": 90,
+    "Name": "Styx",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Styx",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "A river who forms the border between earth and the und"
+  },
+  {
+    "ID": 91,
+    "Name": "Phlegethon",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phlegethon",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "One of the rivers of the underworld."
+  },
+  {
+    "ID": 92,
+    "Name": "Acheron",
+    "Gender": "Male",
+    "FatherID": 31,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Acheron",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "One of the rivers of the underworld."
+  },
+  {
+    "ID": 93,
+    "Name": "Lethe",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Lethe",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "One of the rivers of the underworld."
+  },
+  {
+    "ID": 94,
+    "Name": "Cocytus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cocytus",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "One of the rivers of the underworld."
+  },
+  {
+    "ID": 95,
+    "Name": "Echidna",
+    "Gender": "Female",
+    "FatherID": 4,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Echidna_(mythology)",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "A half woman half snake monster."
+  },
+  {
+    "ID": 96,
+    "Name": "Kerberos",
+    "Gender": "Male",
+    "FatherID": 38,
+    "MotherID": 95,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cerberus",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "Three headed dog guardian of the gates of the underwor"
+  },
+  {
+    "ID": 97,
+    "Name": "Hydra",
+    "Gender": "Female",
+    "FatherID": 4,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Lernaean_Hydra",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "Multiple snake headed water monster."
+  },
+  {
+    "ID": 98,
+    "Name": "Nereus",
+    "Gender": "Male",
+    "FatherID": 5,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nereus",
+    "Category": [
+      "God"
+    ],
+    "Description": "Ancient sea god - \"The Old Gentleman\". Father of the N"
+  },
+  {
+    "ID": 99,
+    "Name": "Doris",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Doris_(mythology)",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "One of the 3000 Oceanids, mother of the 50  Nereids"
+  },
+  {
+    "ID": 100,
+    "Name": "Amphitrite",
+    "Gender": "Female",
+    "FatherID": 98,
+    "MotherID": 99,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Amphitrite",
+    "Category": [
+      "Nereid",
+      "Nymph",
+      "Goddess"
+    ],
+    "Description": "Nereid sea goddess and consort of Poseidon."
+  },
+  {
+    "ID": 101,
+    "Name": "Triton",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 100,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Triton_(mythology)",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of the sea, merman son of Poseidon"
+  },
+  {
+    "ID": 102,
+    "Name": "Arion",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 55,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Arion",
+    "Category": [],
+    "Description": "Fabulously fast divine horse."
+  },
+  {
+    "ID": 103,
+    "Name": "Persephone",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 55,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Persephone",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Also Kore, Queen of the underworld."
+  },
+  {
+    "ID": 104,
+    "Name": "Hephaestus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 57,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hephaestus",
+    "Category": [
+      "Olympian",
+      "Goddess"
+    ],
+    "Description": "Olympian goddess of forges and blacksmithing."
+  },
+  {
+    "ID": 105,
+    "Name": "Ares",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 57,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ares",
+    "Category": [
+      "Olympian",
+      "God"
+    ],
+    "Description": "Olympian god of valour and war."
+  },
+  {
+    "ID": 106,
+    "Name": "Thetis",
+    "Gender": "Female",
+    "FatherID": 98,
+    "MotherID": 99,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thetis",
+    "Category": [
+      "Nereid",
+      "Nymph"
+    ],
+    "Description": "One of the 50 Nereids."
+  },
+  {
+    "ID": 107,
+    "Name": "Athena",
+    "Gender": "Female",
+    "FatherID": 30,
+    "MotherID": 61,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Athena",
+    "Category": [
+      "Olympian",
+      "Goddess"
+    ],
+    "Description": "Olympian goddess of wisdom and warfare. Athena is a ce"
+  },
+  {
+    "ID": 108,
+    "Name": "Leto",
+    "Gender": "Female",
+    "FatherID": 8,
+    "MotherID": 19,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Leto",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of motherhood."
+  },
+  {
+    "ID": 109,
+    "Name": "Artemis",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 108,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Artemis",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of hunting and chastity."
+  },
+  {
+    "ID": 110,
+    "Name": "Apollo",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 108,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Apollo",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of healing, archery, music and knowledge."
+  },
+  {
+    "ID": 111,
+    "Name": "Python",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Python",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "Serpent monster slain by Apollo for attempting to kill"
+  },
+  {
+    "ID": 112,
+    "Name": "Pleione",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pleione",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Oceanid nymph and mother of the \"Pleiades\""
+  },
+  {
+    "ID": 113,
+    "Name": "Maia",
+    "Gender": "Female",
+    "FatherID": 35,
+    "MotherID": 112,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Maia",
+    "Category": [
+      "Pleiad",
+      "Nymph"
+    ],
+    "Description": "One of the Pleiades, mother of Hermes"
+  },
+  {
+    "ID": 114,
+    "Name": "Hermes",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 113,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hermes",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of thieves, cunnung, messengers as well as divine"
+  },
+  {
+    "ID": 115,
+    "Name": "Pandora",
+    "Gender": "Female",
+    "FatherID": 104,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pandora",
+    "Category": [],
+    "Description": "First human woman, given as a \"gift\" from the gods."
+  },
+  {
+    "ID": 116,
+    "Name": "Ponos",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ponos",
+    "Category": [],
+    "Description": "Toil"
+  },
+  {
+    "ID": 117,
+    "Name": "Limos",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Limos",
+    "Category": [],
+    "Description": "Starvation"
+  },
+  {
+    "ID": 118,
+    "Name": "Algea",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Algea",
+    "Category": [],
+    "Description": "Pain"
+  },
+  {
+    "ID": 119,
+    "Name": "Dysnomia",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Dysnomia",
+    "Category": [],
+    "Description": "Anarchy"
+  },
+  {
+    "ID": 120,
+    "Name": "Pseudea",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pseudea",
+    "Category": [],
+    "Description": "Lies"
+  },
+  {
+    "ID": 121,
+    "Name": "Neikea",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Neikea",
+    "Category": [],
+    "Description": "Quarrels"
+  },
+  {
+    "ID": 122,
+    "Name": "Amphillogiai",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Amphillogiai",
+    "Category": [],
+    "Description": "Disputes"
+  },
+  {
+    "ID": 123,
+    "Name": "Makhai",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Makhai",
+    "Category": [],
+    "Description": "Wars"
+  },
+  {
+    "ID": 124,
+    "Name": "Hysminai",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hysminai",
+    "Category": [],
+    "Description": "Battles"
+  },
+  {
+    "ID": 125,
+    "Name": "Androktasiai",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Androktasiai",
+    "Category": [],
+    "Description": "Manslaughters"
+  },
+  {
+    "ID": 126,
+    "Name": "Phonoi",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phonoi",
+    "Category": [],
+    "Description": "Murders"
+  },
+  {
+    "ID": 127,
+    "Name": "Ate",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": 44,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ate",
+    "Category": [],
+    "Description": "Ruin"
+  },
+  {
+    "ID": 128,
+    "Name": "Elpis",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": 2,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Elpis",
+    "Category": [],
+    "Description": "Hope"
+  },
+  {
+    "ID": 129,
+    "Name": "Pyrrha",
+    "Gender": "Female",
+    "FatherID": 36,
+    "MotherID": 115,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pyrrha",
+    "Category": [],
+    "Description": "Repopulator of humanity after the great flood."
+  },
+  {
+    "ID": 130,
+    "Name": "Deucalion",
+    "Gender": "Male",
+    "FatherID": 37,
+    "MotherID": 131,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Deucalion",
+    "Category": [],
+    "Description": "Repopulator of humanity after the great flood."
+  },
+  {
+    "ID": 131,
+    "Name": "Hesione",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hesione",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Oceanid wife of Prometheus"
+  },
+  {
+    "ID": 132,
+    "Name": "Pelasgos",
+    "Gender": "Male",
+    "FatherID": 37,
+    "MotherID": 107,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pelasgos",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "One of the first mortal men, sculpted by Prometheus an"
+  },
+  {
+    "ID": 133,
+    "Name": "Meliboea",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Meliboea",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Oceanid, wife of Pelasgos and mother of Lycaon."
+  },
+  {
+    "ID": 134,
+    "Name": "Lycaon",
+    "Gender": "Male",
+    "FatherID": 132,
+    "MotherID": 133,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Lycaon",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Arcadia who served his son to Zeus and was hen"
+  },
+  {
+    "ID": 135,
+    "Name": "Nyctimus",
+    "Gender": "Female",
+    "FatherID": 134,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nyctimus",
+    "Category": [],
+    "Description": "The youngest of 50 sons of Lycaon. Served as a meal to"
+  },
+  {
+    "ID": 136,
+    "Name": "Europa",
+    "Gender": "Female",
+    "FatherID": 179,
+    "MotherID": 182,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Europa",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Eponym to the continent of Europe. Kidnapped by Zeus i"
+  },
+  {
+    "ID": 137,
+    "Name": "Minos",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 136,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Minos",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Crete who nonannually fed 7 boys and 7 girls t"
+  },
+  {
+    "ID": 138,
+    "Name": "Rhadamanthus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 136,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Rhadamanthus",
+    "Category": [
+      "Mortal",
+      "Royalty",
+      "Demigod"
+    ],
+    "Description": "Demigod king of Crete, became a judge of the dead afte"
+  },
+  {
+    "ID": 139,
+    "Name": "Asopus",
+    "Gender": "Male",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Asopus",
+    "Category": [
+      "Potamoi",
+      "God"
+    ],
+    "Description": "River god who pursued Zeus after Zeus kidnapped his da"
+  },
+  {
+    "ID": 140,
+    "Name": "Ladon",
+    "Gender": "Male",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ladon",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "Minor river god"
+  },
+  {
+    "ID": 141,
+    "Name": "Metope",
+    "Gender": "Female",
+    "FatherID": 140,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Metope",
+    "Category": [
+      "Nymph",
+      "Potamoi"
+    ],
+    "Description": "River nymph, had either 12 or 20 daughters"
+  },
+  {
+    "ID": 142,
+    "Name": "Aegina",
+    "Gender": "Male",
+    "FatherID": 139,
+    "MotherID": 141,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aegina",
+    "Category": [
+      "Nymph"
+    ],
+    "Description": "Nymph kidnapped by Zeus and taken to the island Oenone"
+  },
+  {
+    "ID": 143,
+    "Name": "Aeacus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 142,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aeacus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "The first king of Aegina"
+  },
+  {
+    "ID": 144,
+    "Name": "Perses",
+    "Gender": "Male",
+    "FatherID": 9,
+    "MotherID": 34,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Perses",
+    "Category": [
+      "Titan",
+      "Goddess"
+    ],
+    "Description": "Titan father of goddess Hecate."
+  },
+  {
+    "ID": 145,
+    "Name": "Asteria",
+    "Gender": "Female",
+    "FatherID": 8,
+    "MotherID": 19,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Asteria",
+    "Category": [
+      "Titaness"
+    ],
+    "Description": "Titaness who became an island to escape Zeus's advance"
+  },
+  {
+    "ID": 146,
+    "Name": "Hecate",
+    "Gender": "Female",
+    "FatherID": 144,
+    "MotherID": 145,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hecate",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of witchcraft and magic."
+  },
+  {
+    "ID": 147,
+    "Name": "Hermaphroditos",
+    "Gender": "Male",
+    "FatherID": 114,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hermaphroditos",
+    "Category": [
+      "Naiad",
+      "Nymph"
+    ],
+    "Description": "Born a male, later merged into one body with the naiad"
+  },
+  {
+    "ID": 148,
+    "Name": "Pan",
+    "Gender": "Male",
+    "FatherID": 114,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pan",
+    "Category": [
+      "God"
+    ],
+    "Description": "Goat legged god of nature and shepherds."
+  },
+  {
+    "ID": 149,
+    "Name": "Silenus",
+    "Gender": "Male",
+    "FatherID": 114,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Silenus",
+    "Category": [
+      "God"
+    ],
+    "Description": "Minor god of drunkenness, tutor and companion to Diony"
+  },
+  {
+    "ID": 150,
+    "Name": "Anteros",
+    "Gender": "Male",
+    "FatherID": 105,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Anteros",
+    "Category": [
+      "Erotes",
+      "God"
+    ],
+    "Description": "Member of the erotes, god of requited (two way) love"
+  },
+  {
+    "ID": 151,
+    "Name": "Eros",
+    "Gender": "Male",
+    "FatherID": 105,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eros",
+    "Category": [
+      "Erotes",
+      "God"
+    ],
+    "Description": "Member of the erotes, god of love and intercourse."
+  },
+  {
+    "ID": 152,
+    "Name": "Hedylogos",
+    "Gender": "Male",
+    "FatherID": 105,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hedylogos",
+    "Category": [
+      "Erotes",
+      "God"
+    ],
+    "Description": "Member of the erotes, god of sweet talk and flattery."
+  },
+  {
+    "ID": 153,
+    "Name": "Himeros",
+    "Gender": "Male",
+    "FatherID": 6,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Himeros",
+    "Category": [
+      "Erotes",
+      "God"
+    ],
+    "Description": "Member of the erotes, god of desire and unrequited (un"
+  },
+  {
+    "ID": 154,
+    "Name": "Hymenaios",
+    "Gender": "Male",
+    "FatherID": 110,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hymenaios",
+    "Category": [
+      "Erotes",
+      "God"
+    ],
+    "Description": "Member of the erotes, god of weddings and marriage."
+  },
+  {
+    "ID": 155,
+    "Name": "Pothos",
+    "Gender": "Male",
+    "FatherID": 105,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pothos",
+    "Category": [
+      "Erotes",
+      "God"
+    ],
+    "Description": "Member of the erotes, god of yearning and longing."
+  },
+  {
+    "ID": 156,
+    "Name": "Psyche",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Psyche_(mythology)",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Beautiful mortal woman who coupled with Eros and was l"
+  },
+  {
+    "ID": 157,
+    "Name": "Astraeus",
+    "Gender": "Male",
+    "FatherID": 9,
+    "MotherID": 34,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Astraeus",
+    "Category": [
+      "Anemoi",
+      "God"
+    ],
+    "Description": "God of the dusk and father of the Anemoi (winds)."
+  },
+  {
+    "ID": 158,
+    "Name": "Boreas",
+    "Gender": "Male",
+    "FatherID": 157,
+    "MotherID": 33,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Boreas",
+    "Category": [
+      "Anemoi",
+      "God"
+    ],
+    "Description": "God of the cold North wind."
+  },
+  {
+    "ID": 159,
+    "Name": "Zephyrus",
+    "Gender": "Male",
+    "FatherID": 157,
+    "MotherID": 33,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Zephyrus",
+    "Category": [
+      "Anemoi",
+      "God"
+    ],
+    "Description": "God of the gentle East wind."
+  },
+  {
+    "ID": 160,
+    "Name": "Notus",
+    "Gender": "Male",
+    "FatherID": 157,
+    "MotherID": 33,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Notus",
+    "Category": [
+      "Anemoi",
+      "God"
+    ],
+    "Description": "God of the hot South wind"
+  },
+  {
+    "ID": 161,
+    "Name": "Eurus",
+    "Gender": "Male",
+    "FatherID": 157,
+    "MotherID": 33,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurus",
+    "Category": [
+      "Anemoi",
+      "God"
+    ],
+    "Description": "God of the turbulent East wind"
+  },
+  {
+    "ID": 162,
+    "Name": "Hedone",
+    "Gender": "Female",
+    "FatherID": 151,
+    "MotherID": 156,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hedone",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of pleasure"
+  },
+  {
+    "ID": 163,
+    "Name": "Inachus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Inachus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "First king of Argos"
+  },
+  {
+    "ID": 164,
+    "Name": "Melia",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Melia",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Oceanid water nymph"
+  },
+  {
+    "ID": 165,
+    "Name": "Io",
+    "Gender": "Female",
+    "FatherID": 163,
+    "MotherID": 164,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Io",
+    "Category": [],
+    "Description": "Priestess to Hera who was transformed into a cow in at"
+  },
+  {
+    "ID": 166,
+    "Name": "Mycene",
+    "Gender": "Female",
+    "FatherID": 163,
+    "MotherID": 164,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Mycene",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Princess of Argos, said to be the eponym of Mycenae"
+  },
+  {
+    "ID": 167,
+    "Name": "Arestor",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Arestor",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Argive prince"
+  },
+  {
+    "ID": 168,
+    "Name": "Argus Panoptes",
+    "Gender": "Male",
+    "FatherID": 167,
+    "MotherID": 166,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Argus_Panoptes",
+    "Category": [],
+    "Description": "100 eyed man sent as watcher over Io by Hera."
+  },
+  {
+    "ID": 169,
+    "Name": "Epaphus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 165,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Epaphus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Son of Zeus, concieved simply by a touch. King of Egyp"
+  },
+  {
+    "ID": 170,
+    "Name": "Keroessa",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 165,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Keroessa",
+    "Category": [],
+    "Description": "Birthed in Thrace as Io ran across Greece away from a"
+  },
+  {
+    "ID": 171,
+    "Name": "Byzas",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 170,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Byzas",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Legendary founder and eponym of Byzantium."
+  },
+  {
+    "ID": 172,
+    "Name": "Erechtheus",
+    "Gender": "Male",
+    "FatherID": 104,
+    "MotherID": 3,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Erechtheus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Athens"
+  },
+  {
+    "ID": 173,
+    "Name": "Phaeton",
+    "Gender": "Male",
+    "FatherID": 110,
+    "MotherID": 29,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phaeton",
+    "Category": [],
+    "Description": "Son of Apollo who died after losing control on Apollo'"
+  },
+  {
+    "ID": 174,
+    "Name": "Sthenelus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Sthenelus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Liguria"
+  },
+  {
+    "ID": 175,
+    "Name": "Cygnus",
+    "Gender": "Male",
+    "FatherID": 174,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cygnus",
+    "Category": [],
+    "Description": "Lover of Phaeton, saddened after Phaeton's death and t"
+  },
+  {
+    "ID": 176,
+    "Name": "Memphis",
+    "Gender": "Female",
+    "FatherID": 28,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Memphis",
+    "Category": [
+      "Naiad",
+      "Nymph"
+    ],
+    "Description": "Naiad nymph, founded Memphis with her husband."
+  },
+  {
+    "ID": 177,
+    "Name": "Libya",
+    "Gender": "Female",
+    "FatherID": 169,
+    "MotherID": 176,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Libya",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Eponym of the area of ancient Libya."
+  },
+  {
+    "ID": 178,
+    "Name": "Belus",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 177,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Belus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Egypt"
+  },
+  {
+    "ID": 179,
+    "Name": "Agenor",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 177,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Agenor",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Tyre in Phoenicia."
+  },
+  {
+    "ID": 180,
+    "Name": "Aegyptus",
+    "Gender": "Male",
+    "FatherID": 178,
+    "MotherID": 181,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aegyptus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "First king of Egypt, named the country after himself."
+  },
+  {
+    "ID": 181,
+    "Name": "Achiroe",
+    "Gender": "Female",
+    "FatherID": 28,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Achiroe",
+    "Category": [
+      "Naiad",
+      "Nymph",
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Naiad Queen mother of Egypt."
+  },
+  {
+    "ID": 182,
+    "Name": "Telephassa",
+    "Gender": "Female",
+    "FatherID": 28,
+    "MotherID": 183,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Telephassa",
+    "Category": [],
+    "Description": "Mother of Cadmus"
+  },
+  {
+    "ID": 183,
+    "Name": "Nephele",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nephele",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "A cloud goddess of hospitality, made in the image of H"
+  },
+  {
+    "ID": 184,
+    "Name": "Sarpedon",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 136,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Sarpedon",
+    "Category": [],
+    "Description": "Son of Zeus who fort for Troy during the Trojan war."
+  },
+  {
+    "ID": 185,
+    "Name": "Cadmus",
+    "Gender": "Male",
+    "FatherID": 179,
+    "MotherID": 182,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cadmus",
+    "Category": [
+      "Monster",
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Founder king of Thebes and slayer of the water dragon."
+  },
+  {
+    "ID": 186,
+    "Name": "Cilix",
+    "Gender": "Male",
+    "FatherID": 179,
+    "MotherID": 182,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cilix",
+    "Category": [],
+    "Description": "Brother of Cadmus, later settled down in an area named"
+  },
+  {
+    "ID": 187,
+    "Name": "Phoenix",
+    "Gender": "Male",
+    "FatherID": 179,
+    "MotherID": 182,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phoenix",
+    "Category": [],
+    "Description": "Brother of Cadmus, later settled in the area Phoenicia"
+  },
+  {
+    "ID": 188,
+    "Name": "Thasus",
+    "Gender": "Male",
+    "FatherID": 179,
+    "MotherID": 182,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thasus",
+    "Category": [],
+    "Description": "Sent out to find Europa with his brothers, later found"
+  },
+  {
+    "ID": 189,
+    "Name": "Electra",
+    "Gender": "Female",
+    "FatherID": 35,
+    "MotherID": 112,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Electra",
+    "Category": [
+      "Pleiad",
+      "Nymph"
+    ],
+    "Description": "One of the pleiades, had several children by Zeus."
+  },
+  {
+    "ID": 190,
+    "Name": "Dardanus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 189,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Dardanus",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "The founder and eponym of Dardanus in the Troad. Also"
+  },
+  {
+    "ID": 191,
+    "Name": "Iasion",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 189,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Iasion",
+    "Category": [],
+    "Description": "Child of Zeus"
+  },
+  {
+    "ID": 192,
+    "Name": "Harmonia",
+    "Gender": "Female",
+    "FatherID": 61,
+    "MotherID": 189,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Harmonia",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of harmony and concord"
+  },
+  {
+    "ID": 193,
+    "Name": "Amphidamas",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Amphidamas",
+    "Category": [],
+    "Description": "Father of Pelagon, who gave Cadmus the cow that lead h"
+  },
+  {
+    "ID": 194,
+    "Name": "Pelagon",
+    "Gender": "Male",
+    "FatherID": 193,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pelagon",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Phocis, who hosted Cadmus before he founded Th"
+  },
+  {
+    "ID": 195,
+    "Name": "Polydorus",
+    "Gender": "Male",
+    "FatherID": 185,
+    "MotherID": 192,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Polydorus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Thebes"
+  },
+  {
+    "ID": 196,
+    "Name": "Illyrius",
+    "Gender": "Male",
+    "FatherID": 185,
+    "MotherID": 192,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Illyrius",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Founder and eponym of Illyria."
+  },
+  {
+    "ID": 197,
+    "Name": "Agave",
+    "Gender": "Female",
+    "FatherID": 185,
+    "MotherID": 192,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Agave",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Princess of Thebes and queen of the Maenads"
+  },
+  {
+    "ID": 198,
+    "Name": "Autonoe",
+    "Gender": "Female",
+    "FatherID": 185,
+    "MotherID": 192,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Autonoe",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Theban princess."
+  },
+  {
+    "ID": 199,
+    "Name": "Ino",
+    "Gender": "Female",
+    "FatherID": 185,
+    "MotherID": 192,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ino",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Theban princess, later Queen (Consort?) of Boeotia."
+  },
+  {
+    "ID": 200,
+    "Name": "Semele",
+    "Gender": "Female",
+    "FatherID": 185,
+    "MotherID": 192,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Semele",
+    "Category": [],
+    "Description": "Preistess of Zeus, seduced by Zeus and later tricked i"
+  },
+  {
+    "ID": 201,
+    "Name": "Dionysus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 200,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Dionysus",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of wine and freedom. Gestated inside Zeus's thigh."
+  },
+  {
+    "ID": 202,
+    "Name": "Philyra",
+    "Gender": "Female",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Philyra",
+    "Category": [
+      "Oceanid",
+      "Nymph"
+    ],
+    "Description": "Oceanid, transformed into a linden tree after the emba"
+  },
+  {
+    "ID": 203,
+    "Name": "Chiron",
+    "Gender": "Male",
+    "FatherID": 15,
+    "MotherID": 202,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Chiron",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "Phenotypical but not genetic centaur, mentor to multip"
+  },
+  {
+    "ID": 204,
+    "Name": "Priapus",
+    "Gender": "Male",
+    "FatherID": 201,
+    "MotherID": 52,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Priapus",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of beekeepers and the penis. Has a massive gonk."
+  },
+  {
+    "ID": 205,
+    "Name": "Cyrene",
+    "Gender": "Male",
+    "FatherID": 249,
+    "MotherID": 250,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cyrene",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Thessalian princess, and later Queen regnant of the ep"
+  },
+  {
+    "ID": 206,
+    "Name": "Aristaeus",
+    "Gender": "Male",
+    "FatherID": 110,
+    "MotherID": 205,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aristaeus",
+    "Category": [],
+    "Description": "First man to keep bees, as well as many other skills."
+  },
+  {
+    "ID": 207,
+    "Name": "Actaeon",
+    "Gender": "Male",
+    "FatherID": 206,
+    "MotherID": 198,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Actaeon",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Stared at the virgin goddess Artemis whilst hunting an"
+  },
+  {
+    "ID": 208,
+    "Name": "Coronis",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Coronis",
+    "Category": [],
+    "Description": "Lover of Apollo who had an affair whilst pregnant and"
+  },
+  {
+    "ID": 209,
+    "Name": "Asclepius",
+    "Gender": "Male",
+    "FatherID": 110,
+    "MotherID": 208,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Asclepius",
+    "Category": [],
+    "Description": "Great healer who was killed by Zeus for stealing Hades"
+  },
+  {
+    "ID": 210,
+    "Name": "Epione",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Epione",
+    "Category": [],
+    "Description": "Wife of Asclepius"
+  },
+  {
+    "ID": 211,
+    "Name": "Machaon",
+    "Gender": "Male",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Machaon",
+    "Category": [],
+    "Description": "Physician who led the army of Tricca in the Trojan War"
+  },
+  {
+    "ID": 212,
+    "Name": "Podalirius",
+    "Gender": "Male",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Podalirius",
+    "Category": [],
+    "Description": "Physician who led the army of Tricca in the Trojan War"
+  },
+  {
+    "ID": 213,
+    "Name": "Telesphoros",
+    "Gender": "Male",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Telesphoros",
+    "Category": [
+      "God"
+    ],
+    "Description": "Dwarf minor god of healing, symbloising recovery from"
+  },
+  {
+    "ID": 214,
+    "Name": "Aceso",
+    "Gender": "Female",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aceso",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of the healing process"
+  },
+  {
+    "ID": 215,
+    "Name": "Aegle",
+    "Gender": "Female",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aegle",
+    "Category": [],
+    "Description": "Daughter of Asclepius"
+  },
+  {
+    "ID": 216,
+    "Name": "Hygieia",
+    "Gender": "Female",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hygieia",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of hygiene and cleanliness."
+  },
+  {
+    "ID": 217,
+    "Name": "Iaso",
+    "Gender": "Female",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Iaso",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of recuperation from illness"
+  },
+  {
+    "ID": 218,
+    "Name": "Panacaea",
+    "Gender": "Female",
+    "FatherID": 209,
+    "MotherID": 210,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Panacaea",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Goddess of universal remedy."
+  },
+  {
+    "ID": 219,
+    "Name": "Ixion",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ixion",
+    "Category": [],
+    "Description": "Invivited to have dinner with the gods, put attempted"
+  },
+  {
+    "ID": 220,
+    "Name": "Neara",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Neara",
+    "Category": [
+      "Nymph"
+    ],
+    "Description": "Nymph  of Thrinacia"
+  },
+  {
+    "ID": 221,
+    "Name": "Centauros",
+    "Gender": "Male",
+    "FatherID": 219,
+    "MotherID": 183,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Centauros",
+    "Category": [
+      "Monster"
+    ],
+    "Description": "The first true centaur (barring Chiron), savage and wi"
+  },
+  {
+    "ID": 222,
+    "Name": "Hellen",
+    "Gender": "Male",
+    "FatherID": 130,
+    "MotherID": 129,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hellen",
+    "Category": [],
+    "Description": "Son of Deucalion, lends his name to \"Hellenes\" and \"He"
+  },
+  {
+    "ID": 223,
+    "Name": "Orseis",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Orseis",
+    "Category": [
+      "Nymph"
+    ],
+    "Description": "Water nymph and ancestor of the Greeks."
+  },
+  {
+    "ID": 224,
+    "Name": "Enarete",
+    "Gender": "Female",
+    "FatherID": 251,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Enarete",
+    "Category": [],
+    "Description": "Wife of Aeolus"
+  },
+  {
+    "ID": 225,
+    "Name": "Aeolus",
+    "Gender": "Male",
+    "FatherID": 222,
+    "MotherID": 223,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aeolus_(son_of_Hellen)",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Founder, ruler and eponym of Aeolia, later called Thes"
+  },
+  {
+    "ID": 226,
+    "Name": "Canace",
+    "Gender": "Female",
+    "FatherID": 225,
+    "MotherID": 224,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Canace",
+    "Category": [],
+    "Description": "Lover of Poseidon."
+  },
+  {
+    "ID": 227,
+    "Name": "Triopas",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 226,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Triopas",
+    "Category": [],
+    "Description": "Destroyed a temple of Demeter and was punished with an"
+  },
+  {
+    "ID": 228,
+    "Name": "Eurymedusa",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurymedusa",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Mother of Myrmidon and princess of Phtiotis, seduced b"
+  },
+  {
+    "ID": 229,
+    "Name": "Myrmidon",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": 228,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Myrmidon",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Eponymous ancestor of the Myrmidons and king of Phtiot"
+  },
+  {
+    "ID": 230,
+    "Name": "Hiscilla",
+    "Gender": "Female",
+    "FatherID": 229,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hiscilla",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Phthian princess"
+  },
+  {
+    "ID": 231,
+    "Name": "Iphimedia",
+    "Gender": "Female",
+    "FatherID": 227,
+    "MotherID": 230,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Iphimedia",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Thessalian princess, so infatuated with the sea that s"
+  },
+  {
+    "ID": 232,
+    "Name": "Otus",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 231,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Otus",
+    "Category": [],
+    "Description": "Huge and strong, nine times the height of a normal man"
+  },
+  {
+    "ID": 233,
+    "Name": "Ephialtes",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 231,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ephialtes",
+    "Category": [],
+    "Description": "Huge and strong, nine times the height of a normal man"
+  },
+  {
+    "ID": 234,
+    "Name": "Sisyphus",
+    "Gender": "Male",
+    "FatherID": 225,
+    "MotherID": 224,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Sisyphus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Founder king of Ephyra, later known as Corinth. Sentan"
+  },
+  {
+    "ID": 235,
+    "Name": "Athamas",
+    "Gender": "Male",
+    "FatherID": 225,
+    "MotherID": 224,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Athamas",
+    "Category": [
+      "Mortal",
+      "Royalty",
+      "Goddess"
+    ],
+    "Description": "Boeotian king and husband if the goddess Nephele. Trie"
+  },
+  {
+    "ID": 236,
+    "Name": "Phrixus",
+    "Gender": "Male",
+    "FatherID": 235,
+    "MotherID": 183,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phrixus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Boeoetian prince was almost sacrificed to the gods unt"
+  },
+  {
+    "ID": 237,
+    "Name": "Helle",
+    "Gender": "Female",
+    "FatherID": 235,
+    "MotherID": 183,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Helle",
+    "Category": [],
+    "Description": "Also called Athamis, went with Phrixus on the golden r"
+  },
+  {
+    "ID": 238,
+    "Name": "Tantalus",
+    "Gender": "Male",
+    "FatherID": 61,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Tantalus",
+    "Category": [],
+    "Description": "Stewed his son to feed to the gods and was thus made t"
+  },
+  {
+    "ID": 239,
+    "Name": "Dione",
+    "Gender": "Female",
+    "FatherID": 35,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Dione",
+    "Category": [
+      "Hyades",
+      "Nymph"
+    ],
+    "Description": "One of the Hyades, rain bringing nymphs. Consort of Ta"
+  },
+  {
+    "ID": 240,
+    "Name": "Pelops",
+    "Gender": "Male",
+    "FatherID": 238,
+    "MotherID": 239,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pelops",
+    "Category": [],
+    "Description": "Brought back to life after his father stewed him for t"
+  },
+  {
+    "ID": 241,
+    "Name": "Niobe",
+    "Gender": "Female",
+    "FatherID": 238,
+    "MotherID": 239,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Niobe",
+    "Category": [],
+    "Description": "Claimed her children where better thn the gods and thu"
+  },
+  {
+    "ID": 242,
+    "Name": "Broteas",
+    "Gender": "Male",
+    "FatherID": 238,
+    "MotherID": 239,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Broteas",
+    "Category": [],
+    "Description": "A Lapith hunter, killed at the battle of the Lapiths a"
+  },
+  {
+    "ID": 244,
+    "Name": "Periphetes",
+    "Gender": "Male",
+    "FatherID": 135,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Periphetes",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Arcadian King"
+  },
+  {
+    "ID": 245,
+    "Name": "Ploutos",
+    "Gender": "Male",
+    "FatherID": 191,
+    "MotherID": 55,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ploutos",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of wealth"
+  },
+  {
+    "ID": 246,
+    "Name": "Philomelus",
+    "Gender": "Male",
+    "FatherID": 191,
+    "MotherID": 55,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Philomelus",
+    "Category": [
+      "Demigod"
+    ],
+    "Description": "Demigod, invented the wagon and plough to make money a"
+  },
+  {
+    "ID": 247,
+    "Name": "Corybas",
+    "Gender": "Male",
+    "FatherID": 191,
+    "MotherID": 55,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Corybas",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Eponym of the dancing priests of Phrygia, the Corybant"
+  },
+  {
+    "ID": 248,
+    "Name": "Peneus",
+    "Gender": "Male",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Peneus",
+    "Category": [
+      "Potamoi"
+    ],
+    "Description": "One of the Potamoi- river gods."
+  },
+  {
+    "ID": 249,
+    "Name": "Hypseus",
+    "Gender": "Male",
+    "FatherID": 248,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hypseus",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Lapiths"
+  },
+  {
+    "ID": 250,
+    "Name": "Chlidanope",
+    "Gender": "Female",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Chlidanope",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Queen consort of Hypseus, King of the Lapiths"
+  },
+  {
+    "ID": 251,
+    "Name": "Deimachus",
+    "Gender": "Male",
+    "FatherID": null,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Deimachus",
+    "Category": [],
+    "Description": "Father of Enarete"
+  },
+  {
+    "ID": 253,
+    "Name": "Erysichthon",
+    "Gender": "Male",
+    "FatherID": 227,
+    "MotherID": 230,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Erysichthon",
+    "Category": [],
+    "Description": "Cursed by Demeter with insatiable hunger, much like hi"
+  },
+  {
+    "ID": 254,
+    "Name": "Mestra",
+    "Gender": "Female",
+    "FatherID": 253,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Mestra",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Princess of Thessaly with the ability to shapeshift. T"
+  }
+]
