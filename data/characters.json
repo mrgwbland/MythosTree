@@ -1055,7 +1055,7 @@
     "Category": [
       "Gorgon"
     ],
-    "Description": "One of the gorgons, snake headed sisters whose gaze tu"
+    "Description": "One of the gorgons, snake headed sisters whos' gaze tu"
   },
   {
     "ID": 87,
@@ -1067,7 +1067,7 @@
     "Category": [
       "Gorgon"
     ],
-    "Description": "One of the gorgons, snake headed sisters whose gaze tu"
+    "Description": "One of the gorgons, snake headed sisters whos' gaze tu"
   },
   {
     "ID": 88,
@@ -1079,7 +1079,7 @@
     "Category": [
       "Gorgon"
     ],
-    "Description": "One of the gorgons, snake headed sisters whose gaze tu"
+    "Description": "One of the gorgons, snake headed sisters whos' gaze tu"
   },
   {
     "ID": 89,
@@ -3014,5 +3014,18 @@
       "Royalty"
     ],
     "Description": "Princess of Thessaly with the ability to shapeshift. T"
+  },
+  {
+    "ID": 255,
+    "Name": "Bellerophon",
+    "Gender": "Male",
+    "FatherID": 56,
+    "MotherID": 71,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Bellerophon",
+    "Category": [
+      "Mortal",
+      "Hero"
+    ],
+    "Description": "A great hero, known for taming and riding the winged horse Pegasus."
   }
 ]

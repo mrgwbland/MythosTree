@@ -36,11 +36,10 @@ class MythosTreeApp {
     this.dirSortBy = 'name'; // 'name', 'id', 'children'
     this.dirSortAsc = true;
 
-    // Detect if running locally (localhost, 127.0.0.1, file://, or ?edit=1)
-    this.isLocal = window.location.hostname === 'localhost'
-                || window.location.hostname === '127.0.0.1'
-                || window.location.protocol === 'file:'
-                || window.location.search.includes('edit=1');
+    // Edit mode strictly operates only when served by the local Python development server (localhost / 127.0.0.1)
+    // To test the exact public read-only view locally, visit: http://localhost:8000/?readonly=1
+    this.isLocal = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+                && !window.location.search.includes('readonly=1');
 
     this.hasLocalEdits = false;
     this.modalCurrentTags = [];
@@ -56,39 +55,46 @@ class MythosTreeApp {
       this.updateStagedBar();
     } catch (err) {
       console.error('Initialization error:', err);
+      let extraHelp = '';
+      if (window.location.protocol === 'file:') {
+        extraHelp = `
+          <p style="margin-top: 0.85rem; font-size: 0.9rem; color: #f87171; line-height: 1.5;">
+            <strong>Browser Security Notice:</strong> Modern browsers block loading local JSON files via <code>file://</code> URLs (CORS policy).
+            <br>
+            Please double-click <strong>run.bat</strong> to run the local server, or host on GitHub Pages.
+          </p>
+        `;
+      }
       this.viewContainer.innerHTML = `
         <div class="empty-children-card">
           <div class="empty-icon">⚠️</div>
           <h3>Failed to load mythological data</h3>
-          <p>${err.message}</p>
+          <p>${this.escapeHtml(err.message)}</p>
+          ${extraHelp}
         </div>
       `;
     }
   }
 
   async loadData() {
-    // 0. Check localStorage for staged local edits
-    const staged = localStorage.getItem('mythostree_staged_characters');
-    if (staged) {
-      try {
-        const parsed = JSON.parse(staged);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          this.characters = parsed;
-          this.hasLocalEdits = true;
-          return;
+    // 0. Check localStorage for staged local edits (only in local edit mode)
+    if (this.isLocal) {
+      const staged = localStorage.getItem('mythostree_staged_characters');
+      if (staged) {
+        try {
+          const parsed = JSON.parse(staged);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            this.characters = parsed;
+            this.hasLocalEdits = true;
+            return;
+          }
+        } catch (e) {
+          console.warn('Could not parse staged database from localStorage', e);
         }
-      } catch (e) {
-        console.warn('Could not parse staged database from localStorage', e);
       }
     }
 
-    // 1. First priority: Direct browser window object from data/characters.js (works with file:// and http://)
-    if (window.MYTHOS_DATA && Array.isArray(window.MYTHOS_DATA)) {
-      this.characters = window.MYTHOS_DATA;
-      return;
-    }
-
-    // 2. Fetch from characters.json if hosted on webserver
+    // 1. Fetch single source of truth: data/characters.json
     const response = await fetch('data/characters.json');
     if (!response.ok) {
       throw new Error(`HTTP ${response.status} while fetching data/characters.json`);
