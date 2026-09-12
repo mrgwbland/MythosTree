@@ -27,10 +27,10 @@ class MythosTreeApp {
     this.btnCloseEditModal = document.getElementById('btn-close-edit-modal');
     this.btnCancelEdit = document.getElementById('btn-cancel-edit');
     this.editForm = document.getElementById('edit-form');
-    this.stagedBar = document.getElementById('staged-bar');
-    this.stagedCountText = document.getElementById('staged-count-text');
+    this.btnSaveToFile = document.getElementById('btn-save-to-file');
     this.btnExportJson = document.getElementById('btn-export-json');
     this.btnResetDb = document.getElementById('btn-reset-db');
+    this.toastContainer = document.getElementById('toast-container');
 
     this.selectedSearchIndex = -1;
     this.dirSortBy = 'name'; // 'name', 'id', 'children'
@@ -654,7 +654,10 @@ class MythosTreeApp {
     this.setupParentSuggestions('edit-father-input', 'edit-father-id', 'edit-father-suggest', 'Male');
     this.setupParentSuggestions('edit-mother-input', 'edit-mother-id', 'edit-mother-suggest', 'Female');
 
-    // Staged Changes Export & Reset
+    // Staged Changes Direct Save, Export & Reset
+    if (this.btnSaveToFile) {
+      this.btnSaveToFile.addEventListener('click', () => this.saveDatabaseToFile());
+    }
     if (this.btnExportJson) {
       this.btnExportJson.addEventListener('click', () => this.exportDatabase());
     }
@@ -1241,7 +1244,7 @@ class MythosTreeApp {
     });
   }
 
-  saveCharacter() {
+  async saveCharacter() {
     const id = parseInt(document.getElementById('edit-id').value, 10);
     const name = document.getElementById('edit-name').value.trim();
     const gender = document.getElementById('edit-gender').value;
@@ -1287,24 +1290,68 @@ class MythosTreeApp {
       this.characters.push(char);
     }
 
-    // Persist to localStorage
-    try {
-      localStorage.setItem('mythostree_staged_characters', JSON.stringify(this.characters, null, 2));
-      this.hasLocalEdits = true;
-    } catch (e) {
-      console.error('Failed to save to localStorage', e);
-      alert('Local storage write failed. Your edits are active in memory but could not be persisted.');
-    }
+    // Sort by ID for consistent clean data
+    this.characters.sort((a, b) => a.ID - b.ID);
 
     // Re-index all graphs and maps
     this.buildIndexes();
     this.updateHeaderStats();
-    this.updateStagedBar();
     this.closeEditModal();
+
+    // Auto-save directly to characters.json via the server API
+    await this.saveDatabaseToFile(`Saved "${name}" (ID #${id}) directly to data/characters.json!`);
 
     // Navigate to / refresh character view
     window.location.hash = `#/character/${id}`;
     this.renderCharacterView(id);
+  }
+
+  async saveDatabaseToFile(customSuccessMsg) {
+    if (!this.isLocal) return;
+
+    // Sort for pristine consistency
+    this.characters.sort((a, b) => a.ID - b.ID);
+
+    try {
+      const resp = await fetch('/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(this.characters, null, 2)
+      });
+
+      if (!resp.ok) {
+        throw new Error(`HTTP ${resp.status}`);
+      }
+
+      // Success: clear staged flag and browser localStorage staging
+      localStorage.removeItem('mythostree_staged_characters');
+      this.hasLocalEdits = false;
+      this.updateStagedBar();
+      this.showToast(customSuccessMsg || `Database saved directly to data/characters.json (${this.characters.length} figures)`);
+    } catch (err) {
+      console.warn('Auto-save to server file failed; staging in browser storage:', err);
+      // Fallback: save to localStorage so no work is ever lost
+      localStorage.setItem('mythostree_staged_characters', JSON.stringify(this.characters, null, 2));
+      this.hasLocalEdits = true;
+      this.updateStagedBar();
+      this.showToast('Server unavailable. Changes staged in browser memory.', true);
+    }
+  }
+
+  showToast(message, isWarning = false) {
+    if (!this.toastContainer) return;
+    const toast = document.createElement('div');
+    toast.className = `toast-notification ${isWarning ? 'toast-warning' : ''}`;
+    toast.innerHTML = `
+      <span style="font-size: 1.1rem;">${isWarning ? '⚠️' : '✅'}</span>
+      <span>${this.escapeHtml(message)}</span>
+    `;
+    this.toastContainer.appendChild(toast);
+
+    setTimeout(() => {
+      toast.classList.add('toast-hiding');
+      setTimeout(() => toast.remove(), 350);
+    }, 3500);
   }
 
   updateStagedBar() {
@@ -1312,12 +1359,13 @@ class MythosTreeApp {
     if (this.hasLocalEdits && this.isLocal) {
       this.stagedBar.classList.remove('hidden');
       if (this.stagedCountText) {
-        this.stagedCountText.textContent = `Local edits active (${this.characters.length} characters in stage)`;
+        this.stagedCountText.textContent = `Unsaved edits pending (${this.characters.length} characters in memory)`;
       }
     } else {
       this.stagedBar.classList.add('hidden');
     }
   }
+
 
   exportDatabase() {
     // Sort array by ID for a pristine clean export

@@ -226,18 +226,24 @@
     </div>
   </div>
 
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
   <!-- Staged Changes Floating Bar -->
   <div class="staged-changes-bar hidden" id="staged-bar">
     <div class="staged-info">
       <span class="staged-dot"></span>
-      <span id="staged-count-text">Local edits staged</span>
+      <span id="staged-count-text">Unsaved edits pending</span>
     </div>
     <div class="staged-actions">
-      <button id="btn-export-json" class="btn-staged-action btn-staged-export" title="Export characters.json file to drop into data/">
-        ⬇️ Export characters.json
+      <button id="btn-save-to-file" class="btn-staged-action btn-staged-save" title="Save changes directly into data/characters.json">
+        💾 Save to File
       </button>
-      <button id="btn-reset-db" class="btn-staged-action btn-staged-reset" title="Reset all changes back to original file">
-        ↺ Reset
+      <button id="btn-export-json" class="btn-staged-action btn-staged-export" title="Download backup characters.json">
+        ⬇️ Backup
+      </button>
+      <button id="btn-reset-db" class="btn-staged-action btn-staged-reset" title="Discard unsaved edits and reload from disk">
+        ↺ Discard
       </button>
     </div>
   </div>
