@@ -623,11 +623,6 @@ class MythosTreeApp {
     if (this.btnCancelEdit) {
       this.btnCancelEdit.addEventListener('click', () => this.closeEditModal());
     }
-    if (this.editModal) {
-      this.editModal.addEventListener('click', (e) => {
-        if (e.target === this.editModal) this.closeEditModal();
-      });
-    }
 
     if (this.editForm) {
       this.editForm.addEventListener('submit', (e) => {

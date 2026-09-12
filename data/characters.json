@@ -1969,8 +1969,8 @@
     "ID": 163,
     "Name": "Inachus",
     "Gender": "Male",
-    "FatherID": null,
-    "MotherID": null,
+    "FatherID": 7,
+    "MotherID": 20,
     "Wikipedia": "https://en.wikipedia.org/wiki/Inachus",
     "Category": [
       "Mortal",
@@ -2074,7 +2074,7 @@
   },
   {
     "ID": 172,
-    "Name": "Erechtheus",
+    "Name": "Erichthonius",
     "Gender": "Male",
     "FatherID": 104,
     "MotherID": 3,
@@ -2237,7 +2237,6 @@
     "MotherID": 182,
     "Wikipedia": "https://en.wikipedia.org/wiki/Cadmus",
     "Category": [
-      "Monster",
       "Mortal",
       "Royalty"
     ],
@@ -3083,7 +3082,7 @@
     "ID": 260,
     "Name": "Pandion I",
     "Gender": "Male",
-    "FatherID": 261,
+    "FatherID": 172,
     "MotherID": null,
     "Wikipedia": "https://en.wikipedia.org/wiki/Pandion_I",
     "Category": [
@@ -3094,15 +3093,14 @@
   },
   {
     "ID": 261,
-    "Name": "Erichthonius",
+    "Name": "Achelous",
     "Gender": "Male",
-    "FatherID": 104,
-    "MotherID": null,
-    "Wikipedia": "https://en.wikipedia.org/wiki/Erichthonius_(son_of_Hephaestus)",
+    "FatherID": 7,
+    "MotherID": 20,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Achelous",
     "Category": [
-      "Royalty",
-      "Mortal"
+      "God"
     ],
-    "Description": "King of Athens"
+    "Description": "River God"
   }
 ]
