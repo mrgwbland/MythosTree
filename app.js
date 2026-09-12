@@ -43,6 +43,8 @@ class MythosTreeApp {
 
     this.hasLocalEdits = false;
     this.modalCurrentTags = [];
+    this.modalCurrentAltNames = [];
+    this.lastSearchQuery = '';
   }
 
   async init() {
@@ -114,6 +116,16 @@ class MythosTreeApp {
       this.idMap.set(c.ID, c);
       if (c.Name) {
         this.nameMap.set(c.Name.toLowerCase().trim(), c);
+      }
+      if (Array.isArray(c.AlternateNames)) {
+        for (const alt of c.AlternateNames) {
+          if (alt && typeof alt === 'string') {
+            const cleanAlt = alt.toLowerCase().trim();
+            if (cleanAlt && !this.nameMap.has(cleanAlt)) {
+              this.nameMap.set(cleanAlt, c);
+            }
+          }
+        }
       }
       this.childrenMap.set(c.ID, []);
       this.graph.set(c.ID, []);
@@ -255,6 +267,16 @@ class MythosTreeApp {
       `
       : '';
 
+    // Alternate Names HTML (clean typographic text instead of pills)
+    const altNamesHtml = (char.AlternateNames && char.AlternateNames.length > 0)
+      ? `
+        <div class="hero-alt-names">
+          <span class="hero-alt-names-label">Also known as:</span>
+          <span class="hero-alt-names-text">${char.AlternateNames.map(an => this.escapeHtml(an)).join(', ')}</span>
+        </div>
+      `
+      : '';
+
     // Gender styling
     const isMale = char.Gender === 'Male';
     const genderClass = isMale ? 'male' : 'female';
@@ -354,6 +376,7 @@ class MythosTreeApp {
         </div>
 
         <h1 class="hero-name">${this.escapeHtml(char.Name || 'Unnamed Figure')}</h1>
+        ${altNamesHtml}
 
         <div class="hero-categories">
           ${categoriesHtml}
@@ -494,6 +517,9 @@ class MythosTreeApp {
           const children = this.childrenMap.get(m.ID) || [];
           const childCount = children.length;
           const genderIcon = m.Gender === 'Male' ? '♂' : '♀';
+          const altSub = (m.AlternateNames && m.AlternateNames.length > 0)
+            ? `<span class="child-alias-meta">aka ${this.escapeHtml(m.AlternateNames.slice(0, 2).join(', '))}${m.AlternateNames.length > 2 ? '...' : ''}</span>`
+            : '';
 
           return `
             <a href="#/character/${m.ID}" class="child-card">
@@ -501,6 +527,7 @@ class MythosTreeApp {
                 <span class="child-name">${this.escapeHtml(m.Name || 'Unnamed')}</span>
                 <span class="child-meta">${genderIcon} #${m.ID}</span>
               </div>
+              ${altSub}
               <p class="child-desc">${this.escapeHtml(m.Description || 'No description recorded')}</p>
               <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.5rem;">
                 <div class="child-categories">
@@ -645,6 +672,19 @@ class MythosTreeApp {
       this.setupTagSuggestions();
     }
 
+    // Alternate Names Editor handlers
+    const btnAddAltName = document.getElementById('btn-add-alt-name');
+    const altNameNewInput = document.getElementById('alt-name-new-input');
+    if (btnAddAltName && altNameNewInput) {
+      btnAddAltName.addEventListener('click', () => this.addAltNameFromInput());
+      altNameNewInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          this.addAltNameFromInput();
+        }
+      });
+    }
+
     // Parent autocomplete suggestions
     this.setupParentSuggestions('edit-father-input', 'edit-father-id', 'edit-father-suggest', 'Male');
     this.setupParentSuggestions('edit-mother-input', 'edit-mother-id', 'edit-mother-suggest', 'Female');
@@ -666,25 +706,27 @@ class MythosTreeApp {
      ========================================================================== */
   handleSearchInput(query) {
     const q = query.trim().toLowerCase();
+    this.lastSearchQuery = q;
     if (!q) {
       this.searchDropdown.innerHTML = '';
       this.searchDropdown.classList.add('hidden');
       return;
     }
 
-    // Filter characters by name, category, or ID
+    // Filter characters by name, alternate names, category, or ID
     const results = this.characters.filter(c => {
       const name = (c.Name || '').toLowerCase();
       const idMatch = String(c.ID) === q;
       const nameMatch = name.includes(q);
+      const altMatch = (c.AlternateNames || []).some(an => (an || '').toLowerCase().includes(q));
       const catMatch = (c.Category || []).some(cat => cat.toLowerCase().includes(q));
-      return idMatch || nameMatch || catMatch;
+      return idMatch || nameMatch || altMatch || catMatch;
     }).slice(0, 8); // top 8 results
 
-    this.renderSearchResults(results);
+    this.renderSearchResults(results, q);
   }
 
-  renderSearchResults(results) {
+  renderSearchResults(results, query = '') {
     if (results.length === 0) {
       this.searchDropdown.innerHTML = `
         <div style="padding: 0.75rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
@@ -695,17 +737,27 @@ class MythosTreeApp {
       return;
     }
 
-    this.searchDropdown.innerHTML = results.map((r, i) => `
-      <div class="search-result-item" data-id="${r.ID}" data-index="${i}" onclick="window.location.hash='#/character/${r.ID}'; document.getElementById('search-dropdown').classList.add('hidden'); document.getElementById('search-input').value='';">
-        <div class="result-info">
-          <span class="result-name">${this.escapeHtml(r.Name || 'Unnamed')}</span>
-          <span class="result-desc">${this.escapeHtml(r.Description || '')}</span>
+    this.searchDropdown.innerHTML = results.map((r, i) => {
+      let altMatchStr = '';
+      if (r.AlternateNames && r.AlternateNames.length > 0 && query) {
+        const matchingAlt = r.AlternateNames.find(an => (an || '').toLowerCase().includes(query));
+        if (matchingAlt && (r.Name || '').toLowerCase() !== matchingAlt.toLowerCase()) {
+          altMatchStr = `<span style="color: var(--cyan-400); font-size: 0.76rem; font-weight: normal; margin-left: 0.35rem;">(aka ${this.escapeHtml(matchingAlt)})</span>`;
+        }
+      }
+
+      return `
+        <div class="search-result-item" data-id="${r.ID}" data-index="${i}" onclick="window.location.hash='#/character/${r.ID}'; document.getElementById('search-dropdown').classList.add('hidden'); document.getElementById('search-input').value='';">
+          <div class="result-info">
+            <span class="result-name">${this.escapeHtml(r.Name || 'Unnamed')}${altMatchStr}</span>
+            <span class="result-desc">${this.escapeHtml(r.Description || '')}</span>
+          </div>
+          <div class="result-tags">
+            ${(r.Category || []).slice(0, 1).map(cat => `<span class="result-tag-pill">${this.escapeHtml(cat)}</span>`).join('')}
+          </div>
         </div>
-        <div class="result-tags">
-          ${(r.Category || []).slice(0, 1).map(cat => `<span class="result-tag-pill">${this.escapeHtml(cat)}</span>`).join('')}
-        </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
 
     this.selectedSearchIndex = -1;
     this.searchDropdown.classList.remove('hidden');
@@ -774,16 +826,31 @@ class MythosTreeApp {
         suggest.classList.add('hidden');
         return;
       }
-      const matches = this.characters.filter(c => (c.Name || '').toLowerCase().includes(val)).slice(0, 5);
+      const matches = this.characters.filter(c => {
+        const nameMatch = (c.Name || '').toLowerCase().includes(val);
+        const altMatch = (c.AlternateNames || []).some(an => (an || '').toLowerCase().includes(val));
+        return nameMatch || altMatch;
+      }).slice(0, 6);
+
       if (!matches.length) {
         suggest.classList.add('hidden');
         return;
       }
-      suggest.innerHTML = matches.map(m => `
-        <div class="path-suggest-item" onclick="document.getElementById('${inputId}').value = '${this.escapeHtml(m.Name)}'; document.getElementById('${suggestId}').classList.add('hidden');">
-          ${this.escapeHtml(m.Name)} (#${m.ID})
-        </div>
-      `).join('');
+
+      suggest.innerHTML = matches.map(m => {
+        let altStr = '';
+        if (m.AlternateNames && m.AlternateNames.length > 0) {
+          const matchedAlt = m.AlternateNames.find(an => (an || '').toLowerCase().includes(val));
+          if (matchedAlt && (m.Name || '').toLowerCase() !== matchedAlt.toLowerCase()) {
+            altStr = ` <span style="color: var(--cyan-400); font-size: 0.75rem;">(aka ${this.escapeHtml(matchedAlt)})</span>`;
+          }
+        }
+        return `
+          <div class="path-suggest-item" onclick="document.getElementById('${inputId}').value = '${this.escapeHtml(m.Name)}'; document.getElementById('${suggestId}').classList.add('hidden');">
+            <strong>${this.escapeHtml(m.Name)}</strong>${altStr} (#${m.ID})
+          </div>
+        `;
+      }).join('');
       suggest.classList.remove('hidden');
     });
 
@@ -1062,6 +1129,9 @@ class MythosTreeApp {
     this.modalCurrentTags = [...(char.Category || [])];
     this.renderModalTags();
 
+    this.modalCurrentAltNames = Array.isArray(char.AlternateNames) ? [...char.AlternateNames] : [];
+    this.renderModalAltNames();
+
     this.editModal.classList.remove('hidden');
     document.getElementById('edit-name').focus();
   }
@@ -1090,6 +1160,9 @@ class MythosTreeApp {
     this.modalCurrentTags = [];
     this.renderModalTags();
 
+    this.modalCurrentAltNames = [];
+    this.renderModalAltNames();
+
     this.editModal.classList.remove('hidden');
     document.getElementById('edit-name').focus();
   }
@@ -1101,6 +1174,47 @@ class MythosTreeApp {
     document.getElementById('edit-father-suggest')?.classList.add('hidden');
     document.getElementById('edit-mother-suggest')?.classList.add('hidden');
     document.getElementById('tag-suggest')?.classList.add('hidden');
+    const altInput = document.getElementById('alt-name-new-input');
+    if (altInput) altInput.value = '';
+  }
+
+  renderModalAltNames() {
+    const container = document.getElementById('alt-names-pills-list');
+    if (!container) return;
+
+    if (this.modalCurrentAltNames.length === 0) {
+      container.innerHTML = '<span style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">No alternate names assigned</span>';
+      return;
+    }
+
+    container.innerHTML = this.modalCurrentAltNames.map((name, idx) => `
+      <span class="alt-name-item-pill">
+        ${this.escapeHtml(name)}
+        <button type="button" class="btn-remove-alt-name" data-index="${idx}" title="Remove alternate name">&times;</button>
+      </span>
+    `).join('');
+
+    container.querySelectorAll('.btn-remove-alt-name').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const idx = parseInt(e.currentTarget.getAttribute('data-index'), 10);
+        this.modalCurrentAltNames.splice(idx, 1);
+        this.renderModalAltNames();
+      });
+    });
+  }
+
+  addAltNameFromInput() {
+    const input = document.getElementById('alt-name-new-input');
+    if (!input) return;
+    const val = input.value.trim();
+    if (!val) return;
+
+    const exists = this.modalCurrentAltNames.some(n => n.toLowerCase() === val.toLowerCase());
+    if (!exists) {
+      this.modalCurrentAltNames.push(val);
+      this.renderModalAltNames();
+    }
+    input.value = '';
   }
 
   renderModalTags() {
@@ -1200,8 +1314,9 @@ class MythosTreeApp {
 
       const matches = this.characters.filter(c => {
         const nameMatch = (c.Name || '').toLowerCase().includes(val);
+        const altMatch = (c.AlternateNames || []).some(an => (an || '').toLowerCase().includes(val));
         const idMatch = String(c.ID) === val;
-        return nameMatch || idMatch;
+        return nameMatch || altMatch || idMatch;
       }).sort((a, b) => {
         if (expectedGender) {
           if (a.Gender === expectedGender && b.Gender !== expectedGender) return -1;
@@ -1215,11 +1330,21 @@ class MythosTreeApp {
         return;
       }
 
-      suggest.innerHTML = matches.map(m => `
-        <div class="path-suggest-item" data-id="${m.ID}" data-name="${this.escapeHtml(m.Name)}">
-          <strong>${this.escapeHtml(m.Name)}</strong> (#${m.ID}) - ${m.Gender === 'Male' ? '♂' : '♀'} <span style="color: var(--text-muted); font-size: 0.72rem;">${(m.Category || []).slice(0, 1).join(', ')}</span>
-        </div>
-      `).join('');
+      suggest.innerHTML = matches.map(m => {
+        let altTag = '';
+        if (m.AlternateNames && m.AlternateNames.length > 0) {
+          const matchedAlt = m.AlternateNames.find(an => (an || '').toLowerCase().includes(val));
+          if (matchedAlt && (m.Name || '').toLowerCase() !== matchedAlt.toLowerCase()) {
+            altTag = `<span style="color: var(--cyan-400); font-size: 0.75rem; font-weight: normal;">(aka ${this.escapeHtml(matchedAlt)})</span> `;
+          }
+        }
+
+        return `
+          <div class="path-suggest-item" data-id="${m.ID}" data-name="${this.escapeHtml(m.Name)}">
+            <strong>${this.escapeHtml(m.Name)}</strong> ${altTag}(#${m.ID}) - ${m.Gender === 'Male' ? '♂' : '♀'} <span style="color: var(--text-muted); font-size: 0.72rem;">${(m.Category || []).slice(0, 1).join(', ')}</span>
+          </div>
+        `;
+      }).join('');
 
       suggest.querySelectorAll('.path-suggest-item').forEach(item => {
         item.addEventListener('click', () => {
@@ -1252,6 +1377,7 @@ class MythosTreeApp {
 
     const wiki = document.getElementById('edit-wiki').value.trim();
     const category = [...this.modalCurrentTags];
+    const altNames = [...this.modalCurrentAltNames];
     const desc = document.getElementById('edit-desc').value.trim();
 
     if (!name) {
@@ -1264,6 +1390,7 @@ class MythosTreeApp {
     if (char) {
       // Update existing character
       char.Name = name;
+      char.AlternateNames = altNames;
       char.Gender = gender;
       char.FatherID = fatherId;
       char.MotherID = motherId;
@@ -1275,6 +1402,7 @@ class MythosTreeApp {
       char = {
         ID: id,
         Name: name,
+        AlternateNames: altNames,
         Gender: gender,
         FatherID: fatherId,
         MotherID: motherId,

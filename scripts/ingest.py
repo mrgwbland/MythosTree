@@ -276,6 +276,7 @@ def parse_file(
             record = {
                 "ID": person_id,
                 "Name": name,
+                "AlternateNames": [],
                 "Gender": gender,
                 "FatherID": father_id,
                 "MotherID": mother_id,
