@@ -3020,12 +3020,89 @@
     "Name": "Bellerophon",
     "Gender": "Male",
     "FatherID": 56,
-    "MotherID": 71,
+    "MotherID": 256,
     "Wikipedia": "https://en.wikipedia.org/wiki/Bellerophon",
     "Category": [
       "Mortal",
       "Hero"
     ],
     "Description": "A great hero, known for taming and riding the winged horse Pegasus."
+  },
+  {
+    "ID": 256,
+    "Name": "Eurynome",
+    "Gender": "Female",
+    "FatherID": 257,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurynome_(daughter_of_Nisus)",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Megarian Princess and Queen of Corinth"
+  },
+  {
+    "ID": 257,
+    "Name": "Nisos",
+    "Gender": "Male",
+    "FatherID": 258,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nisos",
+    "Category": [
+      "Royalty"
+    ],
+    "Description": "King of Megara"
+  },
+  {
+    "ID": 258,
+    "Name": "Pandion II",
+    "Gender": "Male",
+    "FatherID": 259,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pandion_II",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Athens"
+  },
+  {
+    "ID": 259,
+    "Name": "Cecrops II",
+    "Gender": "Male",
+    "FatherID": 260,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cecrops_II",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "Seventh King of Athens"
+  },
+  {
+    "ID": 260,
+    "Name": "Pandion I",
+    "Gender": "Male",
+    "FatherID": 261,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pandion_I",
+    "Category": [
+      "Mortal",
+      "Royalty"
+    ],
+    "Description": "King of Athens"
+  },
+  {
+    "ID": 261,
+    "Name": "Erichthonius",
+    "Gender": "Male",
+    "FatherID": 104,
+    "MotherID": null,
+    "Wikipedia": "https://en.wikipedia.org/wiki/Erichthonius_(son_of_Hephaestus)",
+    "Category": [
+      "Royalty",
+      "Mortal"
+    ],
+    "Description": "King of Athens"
   }
 ]
