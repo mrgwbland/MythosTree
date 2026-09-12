@@ -21,9 +21,29 @@ class MythosTreeApp {
     this.btnClosePathModal = document.getElementById('btn-close-path-modal');
     this.statsCount = document.getElementById('stats-count');
 
+    // Edit & Creation UI Elements
+    this.btnNewCharacter = document.getElementById('btn-new-character');
+    this.editModal = document.getElementById('edit-modal');
+    this.btnCloseEditModal = document.getElementById('btn-close-edit-modal');
+    this.btnCancelEdit = document.getElementById('btn-cancel-edit');
+    this.editForm = document.getElementById('edit-form');
+    this.stagedBar = document.getElementById('staged-bar');
+    this.stagedCountText = document.getElementById('staged-count-text');
+    this.btnExportJson = document.getElementById('btn-export-json');
+    this.btnResetDb = document.getElementById('btn-reset-db');
+
     this.selectedSearchIndex = -1;
     this.dirSortBy = 'name'; // 'name', 'id', 'children'
     this.dirSortAsc = true;
+
+    // Detect if running locally (localhost, 127.0.0.1, file://, or ?edit=1)
+    this.isLocal = window.location.hostname === 'localhost'
+                || window.location.hostname === '127.0.0.1'
+                || window.location.protocol === 'file:'
+                || window.location.search.includes('edit=1');
+
+    this.hasLocalEdits = false;
+    this.modalCurrentTags = [];
   }
 
   async init() {
@@ -33,6 +53,7 @@ class MythosTreeApp {
       this.setupEventListeners();
       this.setupRouter();
       this.updateHeaderStats();
+      this.updateStagedBar();
     } catch (err) {
       console.error('Initialization error:', err);
       this.viewContainer.innerHTML = `
@@ -46,6 +67,21 @@ class MythosTreeApp {
   }
 
   async loadData() {
+    // 0. Check localStorage for staged local edits
+    const staged = localStorage.getItem('mythostree_staged_characters');
+    if (staged) {
+      try {
+        const parsed = JSON.parse(staged);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          this.characters = parsed;
+          this.hasLocalEdits = true;
+          return;
+        }
+      } catch (e) {
+        console.warn('Could not parse staged database from localStorage', e);
+      }
+    }
+
     // 1. First priority: Direct browser window object from data/characters.js (works with file:// and http://)
     if (window.MYTHOS_DATA && Array.isArray(window.MYTHOS_DATA)) {
       this.characters = window.MYTHOS_DATA;
@@ -286,6 +322,13 @@ class MythosTreeApp {
       `;
     }
 
+    const editBtnHtml = this.isLocal ? `
+      <button class="btn-edit-hero" id="btn-edit-hero" title="Edit this character's record">
+        <span>✏️</span>
+        <span>Edit</span>
+      </button>
+    ` : '';
+
     // Render Full Page
     this.viewContainer.innerHTML = `
       <!-- Hero Card -->
@@ -298,7 +341,10 @@ class MythosTreeApp {
               <span>${char.Gender}</span>
             </span>
           </div>
-          ${wikiBtnHtml}
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            ${editBtnHtml}
+            ${wikiBtnHtml}
+          </div>
         </div>
 
         <h1 class="hero-name">${this.escapeHtml(char.Name || 'Unnamed Figure')}</h1>
@@ -338,6 +384,12 @@ class MythosTreeApp {
         </div>
       </section>
     `;
+
+    if (this.isLocal) {
+      document.getElementById('btn-edit-hero')?.addEventListener('click', () => {
+        this.openEditModal(characterId);
+      });
+    }
   }
 
   /* ==========================================================================
@@ -549,6 +601,60 @@ class MythosTreeApp {
 
     this.setupPathInputSuggestions('path-start-input', 'path-start-suggest');
     this.setupPathInputSuggestions('path-end-input', 'path-end-suggest');
+
+    // 5. Edit & Creation Handlers (Local Mode)
+    if (this.btnNewCharacter) {
+      if (!this.isLocal) {
+        this.btnNewCharacter.style.display = 'none';
+      } else {
+        this.btnNewCharacter.addEventListener('click', () => this.openCreateModal());
+      }
+    }
+
+    if (this.btnCloseEditModal) {
+      this.btnCloseEditModal.addEventListener('click', () => this.closeEditModal());
+    }
+    if (this.btnCancelEdit) {
+      this.btnCancelEdit.addEventListener('click', () => this.closeEditModal());
+    }
+    if (this.editModal) {
+      this.editModal.addEventListener('click', (e) => {
+        if (e.target === this.editModal) this.closeEditModal();
+      });
+    }
+
+    if (this.editForm) {
+      this.editForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        this.saveCharacter();
+      });
+    }
+
+    // Tag Editor handlers
+    const btnAddTag = document.getElementById('btn-add-tag');
+    const tagNewInput = document.getElementById('tag-new-input');
+    if (btnAddTag && tagNewInput) {
+      btnAddTag.addEventListener('click', () => this.addTagFromInput());
+      tagNewInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          this.addTagFromInput();
+        }
+      });
+      this.setupTagSuggestions();
+    }
+
+    // Parent autocomplete suggestions
+    this.setupParentSuggestions('edit-father-input', 'edit-father-id', 'edit-father-suggest', 'Male');
+    this.setupParentSuggestions('edit-mother-input', 'edit-mother-id', 'edit-mother-suggest', 'Female');
+
+    // Staged Changes Export & Reset
+    if (this.btnExportJson) {
+      this.btnExportJson.addEventListener('click', () => this.exportDatabase());
+    }
+    if (this.btnResetDb) {
+      this.btnResetDb.addEventListener('click', () => this.resetDatabase());
+    }
   }
 
   /* ==========================================================================
@@ -919,6 +1025,314 @@ class MythosTreeApp {
       term: 'Kin / Extended Relative',
       detail: `${path.length - 1} steps along the genealogical graph`
     };
+  }
+
+  /* ==========================================================================
+     Character Editing & Creation System (Local Staged Editing)
+     ========================================================================== */
+  openEditModal(characterId) {
+    const char = this.idMap.get(characterId);
+    if (!char) return;
+
+    document.getElementById('edit-id').value = char.ID;
+    document.getElementById('edit-modal-icon').textContent = '✏️';
+    document.getElementById('edit-modal-title').textContent = `Edit Character: ${char.Name || 'ID #' + char.ID}`;
+    document.getElementById('edit-modal-subtitle').textContent = `Editing record ID #${char.ID}. All changes update real-time across the tree.`;
+
+    document.getElementById('edit-name').value = char.Name || '';
+    document.getElementById('edit-gender').value = char.Gender || 'Male';
+
+    // Father
+    const father = char.FatherID ? this.idMap.get(char.FatherID) : null;
+    document.getElementById('edit-father-input').value = father ? father.Name : '';
+    document.getElementById('edit-father-id').value = char.FatherID || '';
+
+    // Mother
+    const mother = char.MotherID ? this.idMap.get(char.MotherID) : null;
+    document.getElementById('edit-mother-input').value = mother ? mother.Name : '';
+    document.getElementById('edit-mother-id').value = char.MotherID || '';
+
+    document.getElementById('edit-wiki').value = char.Wikipedia || '';
+    document.getElementById('edit-desc').value = char.Description || '';
+
+    this.modalCurrentTags = [...(char.Category || [])];
+    this.renderModalTags();
+
+    this.editModal.classList.remove('hidden');
+    document.getElementById('edit-name').focus();
+  }
+
+  openCreateModal() {
+    const maxId = this.characters.reduce((max, c) => (c.ID > max ? c.ID : max), 0);
+    const nextId = maxId + 1;
+
+    document.getElementById('edit-id').value = nextId;
+    document.getElementById('edit-modal-icon').textContent = '➕';
+    document.getElementById('edit-modal-title').textContent = `Create New Figure (ID #${nextId})`;
+    document.getElementById('edit-modal-subtitle').textContent = `Creating a new mythological character. Direct children can be assigned by selecting this figure as their parent.`;
+
+    document.getElementById('edit-name').value = '';
+    document.getElementById('edit-gender').value = 'Male';
+
+    document.getElementById('edit-father-input').value = '';
+    document.getElementById('edit-father-id').value = '';
+
+    document.getElementById('edit-mother-input').value = '';
+    document.getElementById('edit-mother-id').value = '';
+
+    document.getElementById('edit-wiki').value = '';
+    document.getElementById('edit-desc').value = '';
+
+    this.modalCurrentTags = [];
+    this.renderModalTags();
+
+    this.editModal.classList.remove('hidden');
+    document.getElementById('edit-name').focus();
+  }
+
+  closeEditModal() {
+    if (this.editModal) {
+      this.editModal.classList.add('hidden');
+    }
+    document.getElementById('edit-father-suggest')?.classList.add('hidden');
+    document.getElementById('edit-mother-suggest')?.classList.add('hidden');
+    document.getElementById('tag-suggest')?.classList.add('hidden');
+  }
+
+  renderModalTags() {
+    const container = document.getElementById('tag-pills-list');
+    if (!container) return;
+
+    if (this.modalCurrentTags.length === 0) {
+      container.innerHTML = '<span style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">No categories assigned</span>';
+      return;
+    }
+
+    container.innerHTML = this.modalCurrentTags.map((tag, idx) => `
+      <span class="tag-item-pill">
+        ${this.escapeHtml(tag)}
+        <button type="button" class="btn-remove-tag" data-index="${idx}" title="Remove category">&times;</button>
+      </span>
+    `).join('');
+
+    container.querySelectorAll('.btn-remove-tag').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const idx = parseInt(e.currentTarget.getAttribute('data-index'), 10);
+        this.modalCurrentTags.splice(idx, 1);
+        this.renderModalTags();
+      });
+    });
+  }
+
+  addTagFromInput() {
+    const input = document.getElementById('tag-new-input');
+    if (!input) return;
+    const val = input.value.trim();
+    if (!val) return;
+
+    const formatted = val.charAt(0).toUpperCase() + val.slice(1);
+    if (!this.modalCurrentTags.includes(formatted)) {
+      this.modalCurrentTags.push(formatted);
+      this.renderModalTags();
+    }
+    input.value = '';
+    document.getElementById('tag-suggest')?.classList.add('hidden');
+  }
+
+  setupTagSuggestions() {
+    const input = document.getElementById('tag-new-input');
+    const suggest = document.getElementById('tag-suggest');
+    if (!input || !suggest) return;
+
+    input.addEventListener('input', (e) => {
+      const val = e.target.value.trim().toLowerCase();
+      if (!val) {
+        suggest.classList.add('hidden');
+        return;
+      }
+      const existingCats = Array.from(this.categoryMap.keys());
+      const matches = existingCats.filter(cat => cat.toLowerCase().includes(val) && !this.modalCurrentTags.includes(cat)).slice(0, 5);
+      if (matches.length === 0) {
+        suggest.classList.add('hidden');
+        return;
+      }
+      suggest.innerHTML = matches.map(cat => `
+        <div class="path-suggest-item" data-cat="${this.escapeHtml(cat)}">${this.escapeHtml(cat)}</div>
+      `).join('');
+      suggest.querySelectorAll('.path-suggest-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const cat = item.getAttribute('data-cat');
+          if (!this.modalCurrentTags.includes(cat)) {
+            this.modalCurrentTags.push(cat);
+            this.renderModalTags();
+          }
+          input.value = '';
+          suggest.classList.add('hidden');
+        });
+      });
+      suggest.classList.remove('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#tag-editor-container')) {
+        suggest.classList.add('hidden');
+      }
+    });
+  }
+
+  setupParentSuggestions(inputId, idFieldId, suggestId, expectedGender) {
+    const input = document.getElementById(inputId);
+    const idField = document.getElementById(idFieldId);
+    const suggest = document.getElementById(suggestId);
+    if (!input || !idField || !suggest) return;
+
+    input.addEventListener('input', (e) => {
+      const val = e.target.value.trim().toLowerCase();
+      if (!val) {
+        idField.value = '';
+        suggest.classList.add('hidden');
+        return;
+      }
+
+      const matches = this.characters.filter(c => {
+        const nameMatch = (c.Name || '').toLowerCase().includes(val);
+        const idMatch = String(c.ID) === val;
+        return nameMatch || idMatch;
+      }).sort((a, b) => {
+        if (expectedGender) {
+          if (a.Gender === expectedGender && b.Gender !== expectedGender) return -1;
+          if (b.Gender === expectedGender && a.Gender !== expectedGender) return 1;
+        }
+        return (a.Name || '').localeCompare(b.Name || '');
+      }).slice(0, 6);
+
+      if (matches.length === 0) {
+        suggest.classList.add('hidden');
+        return;
+      }
+
+      suggest.innerHTML = matches.map(m => `
+        <div class="path-suggest-item" data-id="${m.ID}" data-name="${this.escapeHtml(m.Name)}">
+          <strong>${this.escapeHtml(m.Name)}</strong> (#${m.ID}) - ${m.Gender === 'Male' ? '♂' : '♀'} <span style="color: var(--text-muted); font-size: 0.72rem;">${(m.Category || []).slice(0, 1).join(', ')}</span>
+        </div>
+      `).join('');
+
+      suggest.querySelectorAll('.path-suggest-item').forEach(item => {
+        item.addEventListener('click', () => {
+          input.value = item.getAttribute('data-name');
+          idField.value = item.getAttribute('data-id');
+          suggest.classList.add('hidden');
+        });
+      });
+
+      suggest.classList.remove('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest(`#${inputId}`) && !e.target.closest(`#${suggestId}`)) {
+        suggest.classList.add('hidden');
+      }
+    });
+  }
+
+  saveCharacter() {
+    const id = parseInt(document.getElementById('edit-id').value, 10);
+    const name = document.getElementById('edit-name').value.trim();
+    const gender = document.getElementById('edit-gender').value;
+
+    const fatherIdVal = document.getElementById('edit-father-id').value.trim();
+    const fatherId = fatherIdVal ? parseInt(fatherIdVal, 10) : null;
+
+    const motherIdVal = document.getElementById('edit-mother-id').value.trim();
+    const motherId = motherIdVal ? parseInt(motherIdVal, 10) : null;
+
+    const wiki = document.getElementById('edit-wiki').value.trim();
+    const category = [...this.modalCurrentTags];
+    const desc = document.getElementById('edit-desc').value.trim();
+
+    if (!name) {
+      alert('Please enter a name for the mythological figure.');
+      return;
+    }
+
+    let char = this.idMap.get(id);
+
+    if (char) {
+      // Update existing character
+      char.Name = name;
+      char.Gender = gender;
+      char.FatherID = fatherId;
+      char.MotherID = motherId;
+      char.Wikipedia = wiki;
+      char.Category = category;
+      char.Description = desc;
+    } else {
+      // Create new character
+      char = {
+        ID: id,
+        Name: name,
+        Gender: gender,
+        FatherID: fatherId,
+        MotherID: motherId,
+        Wikipedia: wiki,
+        Category: category,
+        Description: desc
+      };
+      this.characters.push(char);
+    }
+
+    // Persist to localStorage
+    try {
+      localStorage.setItem('mythostree_staged_characters', JSON.stringify(this.characters, null, 2));
+      this.hasLocalEdits = true;
+    } catch (e) {
+      console.error('Failed to save to localStorage', e);
+      alert('Local storage write failed. Your edits are active in memory but could not be persisted.');
+    }
+
+    // Re-index all graphs and maps
+    this.buildIndexes();
+    this.updateHeaderStats();
+    this.updateStagedBar();
+    this.closeEditModal();
+
+    // Navigate to / refresh character view
+    window.location.hash = `#/character/${id}`;
+    this.renderCharacterView(id);
+  }
+
+  updateStagedBar() {
+    if (!this.stagedBar) return;
+    if (this.hasLocalEdits && this.isLocal) {
+      this.stagedBar.classList.remove('hidden');
+      if (this.stagedCountText) {
+        this.stagedCountText.textContent = `Local edits active (${this.characters.length} characters in stage)`;
+      }
+    } else {
+      this.stagedBar.classList.add('hidden');
+    }
+  }
+
+  exportDatabase() {
+    // Sort array by ID for a pristine clean export
+    const sorted = [...this.characters].sort((a, b) => a.ID - b.ID);
+    const jsonStr = JSON.stringify(sorted, null, 2);
+    const blob = new Blob([jsonStr], { type: 'application/json;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'characters.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  resetDatabase() {
+    if (confirm("Reset all local staged edits and restore the original database file from disk?")) {
+      localStorage.removeItem('mythostree_staged_characters');
+      window.location.reload();
+    }
   }
 
   escapeHtml(str) {
