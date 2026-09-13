@@ -44,7 +44,7 @@ class MythosTreeApp {
     // Edit mode strictly operates only when served by the local Python development server (localhost / 127.0.0.1)
     // To test the exact public read-only view locally, visit: http://localhost:8000/?readonly=1
     this.isLocal = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-                && !window.location.search.includes('readonly=1');
+      && !window.location.search.includes('readonly=1');
 
     this.hasLocalEdits = false;
     this.modalCurrentTags = [];
@@ -329,15 +329,15 @@ class MythosTreeApp {
           <h3 class="alt-traditions-title">Alternative Lineage Traditions (${altTraditions.length})</h3>
           <div class="alt-traditions-list">
             ${altTraditions.map(alt => {
-              const f = alt.FatherID ? this.idMap.get(alt.FatherID) : null;
-              const m = alt.MotherID ? this.idMap.get(alt.MotherID) : null;
-              const fHtml = f ? `<a href="#/character/${f.ID}" class="alt-parent-link"><strong>${this.escapeHtml(f.Name)}</strong> (Father)</a>` : `<span>Unknown Father</span>`;
-              const mHtml = m ? `<a href="#/character/${m.ID}" class="alt-parent-link"><strong>${this.escapeHtml(m.Name)}</strong> (Mother)</a>` : `<span>Unknown Mother</span>`;
-              const srcHtml = (alt.Sources && alt.Sources.length > 0)
-                ? `<div class="source-attested-tags">${alt.Sources.map(s => `<span class="source-attested-tag">${this.escapeHtml(s)}</span>`).join('')}</div>`
-                : '';
-              const noteHtml = alt.Notes ? `<span class="alt-tradition-notes">${this.escapeHtml(alt.Notes)}</span>` : '';
-              return `
+        const f = alt.FatherID ? this.idMap.get(alt.FatherID) : null;
+        const m = alt.MotherID ? this.idMap.get(alt.MotherID) : null;
+        const fHtml = f ? `<a href="#/character/${f.ID}" class="alt-parent-link"><strong>${this.escapeHtml(f.Name)}</strong> (Father)</a>` : `<span>Unknown Father</span>`;
+        const mHtml = m ? `<a href="#/character/${m.ID}" class="alt-parent-link"><strong>${this.escapeHtml(m.Name)}</strong> (Mother)</a>` : `<span>Unknown Mother</span>`;
+        const srcHtml = (alt.Sources && alt.Sources.length > 0)
+          ? `<div class="source-attested-tags">${alt.Sources.map(s => `<span class="source-attested-tag">${this.escapeHtml(s)}</span>`).join('')}</div>`
+          : '';
+        const noteHtml = alt.Notes ? `<span class="alt-tradition-notes">${this.escapeHtml(alt.Notes)}</span>` : '';
+        return `
                 <div class="alt-tradition-item">
                   <div class="alt-tradition-parents">
                     <span class="alt-bullet">⚡</span>
@@ -349,7 +349,7 @@ class MythosTreeApp {
                   ${noteHtml}
                 </div>
               `;
-            }).join('')}
+      }).join('')}
           </div>
         </div>
       `;
@@ -397,13 +397,13 @@ class MythosTreeApp {
               All Sources (${childCount})
             </button>
             ${childSources.map(s => {
-              const count = new Set(rawChildEntries.filter(e => (e.sources || []).includes(s)).map(e => e.child.ID)).size;
-              return `
+        const count = new Set(rawChildEntries.filter(e => (e.sources || []).includes(s)).map(e => e.child.ID)).size;
+        return `
                 <button type="button" class="child-source-filter-pill ${this.activeChildSourceFilter === s ? 'active' : ''}" data-source="${this.escapeHtml(s)}">
                   ${this.escapeHtml(s)} (${count})
                 </button>
               `;
-            }).join('')}
+      }).join('')}
           </div>
         </div>
       `;
@@ -480,27 +480,27 @@ class MythosTreeApp {
       childrenHtml = `
         <div class="children-grid">
           ${visibleChildren.map(({ child, entries }) => {
-            // Find other parents across these entries
-            const otherParentNames = [];
-            entries.forEach(e => {
-              if (e.otherParentId && this.idMap.has(e.otherParentId)) {
-                const otherParent = this.idMap.get(e.otherParentId);
-                const srcStr = e.sources.length > 0 ? ` (${e.sources.slice(0, 2).join(', ')})` : '';
-                const str = `${otherParent.Name}${srcStr}`;
-                if (!otherParentNames.includes(str)) otherParentNames.push(str);
-              }
-            });
+        // Find other parents across these entries
+        const otherParentNames = [];
+        entries.forEach(e => {
+          if (e.otherParentId && this.idMap.has(e.otherParentId)) {
+            const otherParent = this.idMap.get(e.otherParentId);
+            const srcStr = e.sources.length > 0 ? ` (${e.sources.slice(0, 2).join(', ')})` : '';
+            const str = `${otherParent.Name}${srcStr}`;
+            if (!otherParentNames.includes(str)) otherParentNames.push(str);
+          }
+        });
 
-            const otherParentStr = otherParentNames.length > 0
-              ? `<span class="child-meta">with ${this.escapeHtml(otherParentNames.join('; '))}</span>`
-              : '';
+        const otherParentStr = otherParentNames.length > 0
+          ? `<span class="child-meta">with ${this.escapeHtml(otherParentNames.join('; '))}</span>`
+          : '';
 
-            const childGenderIcon = child.Gender === 'Male' ? '♂' : '♀';
-            const childCategories = (child.Category || []).slice(0, 3).map(cat => 
-              `<span class="child-category-pill">${this.escapeHtml(cat)}</span>`
-            ).join('');
+        const childGenderIcon = child.Gender === 'Male' ? '♂' : '♀';
+        const childCategories = (child.Category || []).slice(0, 3).map(cat =>
+          `<span class="child-category-pill">${this.escapeHtml(cat)}</span>`
+        ).join('');
 
-            return `
+        return `
               <div class="child-card-wrapper" style="position: relative;">
                 <a href="#/character/${child.ID}" class="child-card" title="View child: ${this.escapeHtml(child.Name)}">
                   <div class="child-top">
@@ -516,7 +516,7 @@ class MythosTreeApp {
                 </a>
               </div>
             `;
-          }).join('')}
+      }).join('')}
         </div>
       `;
     } else if (childCount > 0) {
@@ -849,14 +849,14 @@ class MythosTreeApp {
       <!-- Characters Grid -->
       <div class="children-grid">
         ${sorted.map(m => {
-          const uniqueChildren = new Set((this.childrenMap.get(m.ID) || []).map(e => e.child.ID));
-          const childCount = uniqueChildren.size;
-          const genderIcon = m.Gender === 'Male' ? '♂' : '♀';
-          const altSub = (m.AlternateNames && m.AlternateNames.length > 0)
-            ? `<span class="child-alias-meta">aka ${this.escapeHtml(m.AlternateNames.slice(0, 2).join(', '))}${m.AlternateNames.length > 2 ? '...' : ''}</span>`
-            : '';
+      const uniqueChildren = new Set((this.childrenMap.get(m.ID) || []).map(e => e.child.ID));
+      const childCount = uniqueChildren.size;
+      const genderIcon = m.Gender === 'Male' ? '♂' : '♀';
+      const altSub = (m.AlternateNames && m.AlternateNames.length > 0)
+        ? `<span class="child-alias-meta">aka ${this.escapeHtml(m.AlternateNames.slice(0, 2).join(', '))}${m.AlternateNames.length > 2 ? '...' : ''}</span>`
+        : '';
 
-          return `
+      return `
             <a href="#/character/${m.ID}" class="child-card">
               <div class="child-top">
                 <span class="child-name">${this.escapeHtml(m.Name || 'Unnamed')}</span>
@@ -872,7 +872,7 @@ class MythosTreeApp {
               </div>
             </a>
           `;
-        }).join('')}
+    }).join('')}
       </div>
     `;
 
@@ -931,7 +931,7 @@ class MythosTreeApp {
     if (this.searchInput) {
       this.searchInput.addEventListener('input', (e) => this.handleSearchInput(e.target.value));
       this.searchInput.addEventListener('keydown', (e) => this.handleSearchKeydown(e));
-      
+
       // Close dropdown when clicking outside
       document.addEventListener('click', (e) => {
         if (!e.target.closest('#search-wrapper')) {
@@ -953,9 +953,9 @@ class MythosTreeApp {
       if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && !e.altKey && !e.ctrlKey && !e.metaKey) {
         const tag = (document.activeElement?.tagName || '').toLowerCase();
         if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
-        if (!this.editModal?.classList.contains('hidden') || 
-            !this.pathModal?.classList.contains('hidden') || 
-            !this.citationModal?.classList.contains('hidden')) return;
+        if (!this.editModal?.classList.contains('hidden') ||
+          !this.pathModal?.classList.contains('hidden') ||
+          !this.citationModal?.classList.contains('hidden')) return;
 
         const hash = window.location.hash || '';
         const charMatch = hash.match(/^#\/character\/(\d+)/);
@@ -1686,7 +1686,7 @@ class MythosTreeApp {
           </div>
 
           <div class="parentage-sources-editor">
-            <label style="font-size: 0.8rem; font-weight: 600; color: var(--gold-300);">Supporting Classical Sources (e.g. Hesiod Theogony, Homer Iliad, Apollodorus)</label>
+            <label style="font-size: 0.8rem; font-weight: 600; color: var(--gold-300);">Supporting Classical Sources</label>
             <div class="tag-editor-container" style="margin-top: 0.35rem;">
               <div class="tag-pills-list parentage-sources-pills" data-pid="${p._id}">
                 ${p.Sources.length === 0 ? '<span style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">No sources attached</span>' : ''}

@@ -1193,9 +1193,18 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Thanatos",
     "Category": [],
-    "Description": "Death",
+    "Description": "Personification of death",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 52,
@@ -1208,7 +1217,24 @@
     ],
     "Description": "Olympian goddess of love",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": null,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "By Hesiod's account, the contact of Uranus's semen with the sea spawned Aphrodite"
+      },
+      {
+        "FatherID": 61,
+        "MotherID": null,
+        "Sources": [
+          "Homer"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 53,
@@ -1219,9 +1245,18 @@
       "Olympian",
       "Goddess"
     ],
-    "Description": "Goddess of the hearth and home, was an olympian until",
+    "Description": "Goddess of the hearth and home, was an Olympian until she retired that position to Dionysus",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 15,
+        "MotherID": 21,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 54,
@@ -1235,7 +1270,16 @@
     ],
     "Description": "God of dead and king of the underworld",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 15,
+        "MotherID": 21,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 55,
@@ -1248,7 +1292,16 @@
     ],
     "Description": "Olympian goddess of harvest and agriculture",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 15,
+        "MotherID": 21,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 56,
@@ -1261,7 +1314,16 @@
     ],
     "Description": "Olympian god of the sea",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 15,
+        "MotherID": 21,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 57,
@@ -1274,7 +1336,14 @@
     ],
     "Description": "Olympian goddess of mariage, women and childbirth, con",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 15,
+        "MotherID": 21,
+        "Sources": [],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 58,
@@ -1287,7 +1356,16 @@
     ],
     "Description": "One of the furies, punishers of mortal oathbreakers",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 59,
@@ -1300,7 +1378,16 @@
     ],
     "Description": "One of the furies, punishers of mortal oathbreakers",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 60,
@@ -1313,7 +1400,16 @@
     ],
     "Description": "One of the furies, punishers of mortal oathbreakers",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 61,
@@ -1333,18 +1429,9 @@
         "FatherID": 15,
         "MotherID": 21,
         "Sources": [
-          "Hesiod",
-          "Homer"
+          "Hesiod"
         ],
-        "Notes": "Theogony classical Titanomachy lineage"
-      },
-      {
-        "FatherID": null,
-        "MotherID": 3,
-        "Sources": [
-          "Orphic Tradition"
-        ],
-        "Notes": "Orphic cosmology alternate birth narrative"
+        "Notes": ""
       }
     ]
   },
@@ -1359,7 +1446,27 @@
     ],
     "Description": "One of the muses, goddess of epic poetry",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 63,

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MythosTree — Greek Mythology Lineage & Archive</title>
-  <meta name="description" content="Interactive genealogical explorer and archive of Greek mythological deities, titans, primordials, heroes, and mortals.">
-  
+  <meta name="description"
+    content="Interactive genealogical explorer and archive of Greek mythological deities, titans, primordials, heroes, and mortals.">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css?v=2">
 </head>
+
 <body>
   <!-- Ambient Cosmic Glow Background -->
   <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
@@ -48,7 +53,8 @@
 
         <!-- Path Finder Button -->
         <button id="btn-path-finder" class="btn-icon-label" title="Find kinship path between two characters">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="6" cy="6" r="3"></circle>
             <circle cx="18" cy="18" r="3"></circle>
             <path d="M6 9v3a3 3 0 0 0 3 3h6"></path>
@@ -58,7 +64,8 @@
 
         <!-- Random Character Button -->
         <button id="btn-random" class="btn-icon-label" title="Random mythological figure">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <circle cx="8.5" cy="8.5" r="1.5"></circle>
             <circle cx="15.5" cy="15.5" r="1.5"></circle>
@@ -71,18 +78,13 @@
         <!-- Search Bar -->
         <div class="search-wrapper" id="search-wrapper">
           <div class="search-input-box">
-            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input 
-              type="text" 
-              id="search-input" 
-              placeholder="Search gods, titans, mortals..." 
-              autocomplete="off"
-              spellcheck="false"
-              aria-label="Search Greek Mythology"
-            >
+            <input type="text" id="search-input" placeholder="Search gods, titans, mortals..." autocomplete="off"
+              spellcheck="false" aria-label="Search Greek Mythology">
             <kbd class="search-kbd" id="search-kbd">/</kbd>
           </div>
           <!-- Live Search Dropdown -->
@@ -152,7 +154,9 @@
 
         <button type="submit" id="btn-find-path" class="btn-primary">
           <span>Trace Kinship Path</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
         </button>
       </form>
 
@@ -196,7 +200,8 @@
             <div class="tag-pills-list" id="alt-names-pills-list"></div>
             <div class="tag-input-row">
               <div class="select-wrapper" style="flex: 1;">
-                <input type="text" id="alt-name-new-input" placeholder="Add alternate name or spelling (e.g. Cronus, Briareus, Kore)..." autocomplete="off">
+                <input type="text" id="alt-name-new-input"
+                  placeholder="Add alternate name or spelling (e.g. Cronus, Briareus, Kore)..." autocomplete="off">
               </div>
               <button type="button" id="btn-add-alt-name" class="btn-tag-add">Add Name</button>
             </div>
@@ -211,7 +216,8 @@
               <span>➕</span> Add Parent Pair / Tradition
             </button>
           </div>
-          <p class="form-help-text">Record parent pairs with supporting classical texts (e.g. Hesiod, Homer, Apollodorus). Lineages with the most agreeing sources are presented first as the primary tradition.</p>
+          <p class="form-help-text">Record parent pairs with supporting classical texts. Lineages with the most agreeing
+            sources are presented first as the primary tradition.</p>
           <div class="parentages-list" id="parentages-list">
             <!-- Dynamic parentage repeater cards injected by app.js -->
           </div>
@@ -228,7 +234,8 @@
             <div class="tag-pills-list" id="tag-pills-list"></div>
             <div class="tag-input-row">
               <div class="select-wrapper" style="flex: 1;">
-                <input type="text" id="tag-new-input" placeholder="Add category (e.g. Titan, Nymph, Mortal)..." autocomplete="off">
+                <input type="text" id="tag-new-input" placeholder="Add category (e.g. Titan, Nymph, Mortal)..."
+                  autocomplete="off">
                 <div class="path-suggest hidden" id="tag-suggest"></div>
               </div>
               <button type="button" id="btn-add-tag" class="btn-tag-add">Add Tag</button>
@@ -243,14 +250,16 @@
 
         <div class="modal-form-actions">
           <button type="button" id="btn-cancel-edit" class="btn-secondary">Cancel</button>
-          <button type="submit" id="btn-save-edit" class="btn-primary" style="width: auto; padding: 0.75rem 1.75rem;">Save Changes</button>
+          <button type="submit" id="btn-save-edit" class="btn-primary"
+            style="width: auto; padding: 0.75rem 1.75rem;">Save Changes</button>
         </div>
       </form>
     </div>
   </div>
 
   <!-- Child Citation Details Modal -->
-  <div class="modal-backdrop hidden" id="citation-modal" role="dialog" aria-modal="true" aria-labelledby="citation-modal-title">
+  <div class="modal-backdrop hidden" id="citation-modal" role="dialog" aria-modal="true"
+    aria-labelledby="citation-modal-title">
     <div class="modal-card modal-card-medium">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -275,13 +284,15 @@
       <span id="staged-count-text">Unsaved edits pending</span>
     </div>
     <div class="staged-actions">
-      <button id="btn-save-to-file" class="btn-staged-action btn-staged-save" title="Save changes directly into data/characters.json">
+      <button id="btn-save-to-file" class="btn-staged-action btn-staged-save"
+        title="Save changes directly into data/characters.json">
         💾 Save to File
       </button>
       <button id="btn-export-json" class="btn-staged-action btn-staged-export" title="Download backup characters.json">
         ⬇️ Backup
       </button>
-      <button id="btn-reset-db" class="btn-staged-action btn-staged-reset" title="Discard unsaved edits and reload from disk">
+      <button id="btn-reset-db" class="btn-staged-action btn-staged-reset"
+        title="Discard unsaved edits and reload from disk">
         ↺ Discard
       </button>
     </div>
@@ -296,4 +307,5 @@
   <!-- Application Core Script -->
   <script src="app.js?v=2"></script>
 </body>
+
 </html>
