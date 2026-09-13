@@ -178,7 +178,7 @@
       "Potamoi",
       "God"
     ],
-    "Description": "Titan, god of the river Oceanos",
+    "Description": "Titan, god of the river Oceanos, the great world-encircling river.",
     "AlternateNames": [],
     "Parentages": [
       {
@@ -1114,13 +1114,17 @@
       {
         "FatherID": null,
         "MotherID": 2,
-        "Sources": [],
+        "Sources": [
+          "Hesiod"
+        ],
         "Notes": ""
       },
       {
         "FatherID": 1,
         "MotherID": 2,
-        "Sources": [],
+        "Sources": [
+          "Hyginus"
+        ],
         "Notes": ""
       }
     ]
@@ -1479,7 +1483,27 @@
     ],
     "Description": "One of the muses, goddess of history and the lyre",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 64,
@@ -1492,7 +1516,27 @@
     ],
     "Description": "One of the muses, goddess of erotic and lyrical poetry",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 65,
@@ -1505,7 +1549,27 @@
     ],
     "Description": "One of the muses, goddess of lyric poetry",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 66,
@@ -1518,7 +1582,27 @@
     ],
     "Description": "One of the muses, goddess of tragedy",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 67,
@@ -1531,7 +1615,27 @@
     ],
     "Description": "One of the muses, goddess of hymns",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 68,
@@ -1544,7 +1648,27 @@
     ],
     "Description": "One of the muses, goddess of dancing and chorus",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 69,
@@ -1557,7 +1681,27 @@
     ],
     "Description": "One of the muses, goddess of comedy",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 70,
@@ -1570,34 +1714,82 @@
     ],
     "Description": "One of the muses, goddess of astronomy",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 18,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus",
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Alcman",
+          "Mimnermus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 71,
     "Name": "Eurynome",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Eurynome",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurynome_(Oceanid)",
     "Category": [
-      "Charites",
-      "Oceanid",
-      "Nymph"
+      "Oceanid"
     ],
     "Description": "Oceanid, mother of the charites",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 72,
     "Name": "Aglaea",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Aglaea",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Aglaia_(Grace)#Aglaea,_the_Charis",
     "Category": [
       "Charites",
       "Goddess"
     ],
-    "Description": "One of the charites \"shining\", goddess of grace and ch",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "One of the charites \"shining\", goddess of grace and charm.",
+    "AlternateNames": [
+      "Aglaia"
+    ],
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 71,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 61,
+        "MotherID": 78,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 73,
@@ -1610,7 +1802,25 @@
     ],
     "Description": "One of the charites \"joy\", goddess of joy.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 71,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 61,
+        "MotherID": 78,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 74,
@@ -1621,22 +1831,51 @@
       "Charites",
       "Goddess"
     ],
-    "Description": "One of the charites \"blooming\", goddess of festivity a",
+    "Description": "One of the charites \"blooming\", goddess of festivity and banquets",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 71,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 61,
+        "MotherID": 78,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 75,
     "Name": "Auxesia",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Auxesia",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Auxesia_(mythology)",
     "Category": [
       "Horae",
       "Goddess"
     ],
-    "Description": "One of the horae (goddesses of seasons), goddess of su",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "One of the horae (goddesses of seasons), goddess of summer",
+    "AlternateNames": [
+      "Auxo"
+    ],
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 17,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 76,
@@ -1647,9 +1886,18 @@
       "Horae",
       "Goddess"
     ],
-    "Description": "One of the horae (goddesses of seasons), goddess of au",
+    "Description": "One of the horae (goddesses of seasons), goddess of autumn",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 17,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 77,
@@ -1660,9 +1908,18 @@
       "Horae",
       "Goddess"
     ],
-    "Description": "One of the horae (goddesses of seasons), goddess of sp",
+    "Description": "One of the horae (goddesses of seasons), goddess of spring",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 17,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 78,
@@ -1675,7 +1932,16 @@
     ],
     "Description": "One of the horae, goddess of law and legislation.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 17,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 79,
@@ -1688,7 +1954,16 @@
     ],
     "Description": "One of the horae, goddess of moral justice.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 17,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 80,
@@ -1701,7 +1976,16 @@
     ],
     "Description": "One of the horae, goddess of peace.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 17,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 81,
@@ -1711,9 +1995,18 @@
     "Category": [
       "Moirai"
     ],
-    "Description": "One of the three fates, Clotho spins the thread of lif",
+    "Description": "One of the three fates, Clotho spins the thread of life.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "Born without the need of a father"
+      }
+    ]
   },
   {
     "ID": 82,
@@ -1725,7 +2018,16 @@
     ],
     "Description": "One of the three fates, Lachesis draws out the thread",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "Born without the need of a father"
+      }
+    ]
   },
   {
     "ID": 83,
@@ -1735,9 +2037,18 @@
     "Category": [
       "Moirai"
     ],
-    "Description": "One of the three fates, Atropos cuts the thread of lif",
+    "Description": "One of the three fates, Atropos cuts the thread of life",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "Born without the need of a father"
+      }
+    ]
   },
   {
     "ID": 84,
@@ -1745,11 +2056,21 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Phorcys",
     "Category": [
-      "God"
+      "God",
+      "Primordial"
     ],
     "Description": "A fish tailed and crab skinned sea god.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 5,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 85,
@@ -1757,11 +2078,21 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Ceto",
     "Category": [
-      "Goddess"
+      "Goddess",
+      "Primordial"
     ],
     "Description": "Sea goddess",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 5,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 86,
@@ -1771,9 +2102,19 @@
     "Category": [
       "Gorgon"
     ],
-    "Description": "One of the gorgons, snake headed sisters whos' gaze tu",
+    "Description": "One of the gorgons, snake headed sisters whose gaze turns people to stone.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 84,
+        "MotherID": 85,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 87,
@@ -1783,9 +2124,19 @@
     "Category": [
       "Gorgon"
     ],
-    "Description": "One of the gorgons, snake headed sisters whos' gaze tu",
+    "Description": "One of the gorgons, snake headed sisters whose gaze turns people to stone.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 84,
+        "MotherID": 85,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 88,
@@ -1795,9 +2146,19 @@
     "Category": [
       "Gorgon"
     ],
-    "Description": "One of the gorgons, snake headed sisters whos' gaze tu",
+    "Description": "One of the gorgons, snake headed sisters whose gaze turns people to stone. Medusa was the only mortal of the three, being beheaded by Perseus.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 84,
+        "MotherID": 85,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 89,
@@ -1807,9 +2168,26 @@
     "Category": [
       "Titan"
     ],
-    "Description": "Violent and powerful titan, sent to tartarus after the",
+    "Description": "Violent and powerful titan, sent to Tartarus after the Titanomachy",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 14,
+        "MotherID": 29,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 14,
+        "MotherID": 265,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 90,
@@ -1817,20 +2195,37 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Styx",
     "Category": [
-      "Potamoi"
+      "Potamoi",
+      "Goddess",
+      "Oceanid"
     ],
-    "Description": "A river who forms the border between earth and the und",
+    "Description": "A river who forms the border between earth and the underworld",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 91,
     "Name": "Phlegethon",
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Phlegethon",
-    "Category": [
-      "Potamoi"
-    ],
+    "Category": [],
     "Description": "One of the rivers of the underworld.",
     "AlternateNames": [],
     "Parentages": []
@@ -1840,9 +2235,7 @@
     "Name": "Acheron",
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Acheron",
-    "Category": [
-      "Potamoi"
-    ],
+    "Category": [],
     "Description": "One of the rivers of the underworld.",
     "AlternateNames": [],
     "Parentages": []
@@ -1852,9 +2245,7 @@
     "Name": "Lethe",
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Lethe",
-    "Category": [
-      "Potamoi"
-    ],
+    "Category": [],
     "Description": "One of the rivers of the underworld.",
     "AlternateNames": [],
     "Parentages": []
@@ -1864,9 +2255,7 @@
     "Name": "Cocytus",
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Cocytus",
-    "Category": [
-      "Potamoi"
-    ],
+    "Category": [],
     "Description": "One of the rivers of the underworld.",
     "AlternateNames": [],
     "Parentages": []
@@ -1881,19 +2270,47 @@
     ],
     "Description": "A half woman half snake monster.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 4,
+        "MotherID": 3,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 84,
+        "MotherID": null,
+        "Sources": [
+          "Pherecydes of Athens"
+        ],
+        "Notes": "Presumably Ceto would be the mother?"
+      }
+    ]
   },
   {
     "ID": 96,
-    "Name": "Kerberos",
+    "Name": "Cerberus",
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Cerberus",
     "Category": [
       "Monster"
     ],
-    "Description": "Three headed dog guardian of the gates of the underwor",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "Three headed dog guardian of the gates of the underworld.",
+    "AlternateNames": [
+      "Kerberos"
+    ],
+    "Parentages": [
+      {
+        "FatherID": 38,
+        "MotherID": 95,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 97,
@@ -1905,7 +2322,16 @@
     ],
     "Description": "Multiple snake headed water monster.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 38,
+        "MotherID": 95,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 98,
@@ -1915,22 +2341,41 @@
     "Category": [
       "God"
     ],
-    "Description": "Ancient sea god - \"The Old Gentleman\". Father of the N",
+    "Description": "Ancient sea god - \"The Old Gentleman\". Father of his 50 daughters, the Nereids.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 5,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 99,
     "Name": "Doris",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Doris_(mythology)",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Doris_(Oceanid)",
     "Category": [
       "Oceanid",
-      "Nymph"
+      "Goddess"
     ],
     "Description": "One of the 3000 Oceanids, mother of the 50  Nereids",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 100,
@@ -1940,11 +2385,30 @@
     "Category": [
       "Nereid",
       "Nymph",
-      "Goddess"
+      "Goddess",
+      "Oceanid"
     ],
     "Description": "Nereid sea goddess and consort of Poseidon.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 98,
+        "MotherID": 99,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": "Apollodorus lists her as both a Nereid and an Oceanid"
+      }
+    ]
   },
   {
     "ID": 101,
@@ -1956,17 +2420,36 @@
     ],
     "Description": "God of the sea, merman son of Poseidon",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 56,
+        "MotherID": 100,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 102,
     "Name": "Arion",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Arion",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Arion_(horse)",
     "Category": [],
     "Description": "Fabulously fast divine horse.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 56,
+        "MotherID": 55,
+        "Sources": [
+          "Apollodorus",
+          "Pausanias"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 103,
@@ -1981,7 +2464,16 @@
     "AlternateNames": [
       "Kore"
     ],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 55,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 104,
@@ -1994,7 +2486,24 @@
     ],
     "Description": "Olympian goddess of forges and blacksmithing.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 57,
+        "Sources": [
+          "Homer"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 57,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "According to Hesiod, Hera gives birth to Hephaestus on her own"
+      }
+    ]
   },
   {
     "ID": 105,
@@ -2007,7 +2516,16 @@
     ],
     "Description": "Olympian god of valour and war.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 57,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 106,
@@ -2016,11 +2534,21 @@
     "Wikipedia": "https://en.wikipedia.org/wiki/Thetis",
     "Category": [
       "Nereid",
-      "Nymph"
+      "Nymph",
+      "Goddess"
     ],
     "Description": "One of the 50 Nereids.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 98,
+        "MotherID": 99,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 107,
@@ -2031,9 +2559,18 @@
       "Olympian",
       "Goddess"
     ],
-    "Description": "Olympian goddess of wisdom and warfare. Athena is a ce",
+    "Description": "Olympian goddess of wisdom and warfare. Athena is a celibate",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 30,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 108,
@@ -2045,7 +2582,16 @@
     ],
     "Description": "Goddess of motherhood.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 8,
+        "MotherID": 19,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 109,
@@ -2057,7 +2603,16 @@
     ],
     "Description": "Goddess of hunting and chastity.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 108,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 110,
@@ -2069,32 +2624,55 @@
     ],
     "Description": "God of healing, archery, music and knowledge.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 108,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 111,
     "Name": "Python",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Python",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Python_(mythology)",
     "Category": [
       "Monster"
     ],
-    "Description": "Serpent monster slain by Apollo for attempting to kill",
+    "Description": "Serpent monster slain by Apollo for attempting to kill him and his family.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 3,
+        "Sources": [],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 112,
     "Name": "Pleione",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Pleione",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pleione_(mythology)",
     "Category": [
       "Oceanid",
       "Nymph"
     ],
     "Description": "Oceanid nymph and mother of the \"Pleiades\"",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 113,
@@ -2107,7 +2685,17 @@
     ],
     "Description": "One of the Pleiades, mother of Hermes",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 35,
+        "MotherID": 112,
+        "Sources": [
+          "Apollodorus",
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 114,
@@ -2117,19 +2705,43 @@
     "Category": [
       "God"
     ],
-    "Description": "God of thieves, cunnung, messengers as well as divine",
+    "Description": "God of thieves, cunning and messengers, as well as being the divine messenger and pschopomp.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 61,
+        "MotherID": 113,
+        "Sources": [
+          "Homer",
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 115,
     "Name": "Pandora",
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Pandora",
-    "Category": [],
+    "Category": [
+      "Mortal"
+    ],
     "Description": "First human woman, given as a \"gift\" from the gods.",
-    "AlternateNames": [],
-    "Parentages": []
+    "AlternateNames": [
+      "Anesidora"
+    ],
+    "Parentages": [
+      {
+        "FatherID": 104,
+        "MotherID": null,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "\"Created\" by Hephaestus, as one would an object"
+      }
+    ]
   },
   {
     "ID": 116,
@@ -2137,9 +2749,26 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Ponos",
     "Category": [],
-    "Description": "Toil",
+    "Description": "Personification of toil",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Cicero"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 117,
@@ -2147,29 +2776,56 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Limos",
     "Category": [],
-    "Description": "Starvation",
+    "Description": "Personification of starvation, hunger and famine.\nLimos is a gender neutral name in Greek, different sources claim man or woman.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 118,
     "Name": "Algea",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Algea",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Algea_(mythology)",
     "Category": [],
-    "Description": "Pain",
+    "Description": "Personification of pain",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 119,
     "Name": "Dysnomia",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Dysnomia",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Dysnomia_(deity)",
     "Category": [],
-    "Description": "Anarchy",
+    "Description": "Personification of anarchy",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 120,
@@ -2177,9 +2833,18 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Pseudea",
     "Category": [],
-    "Description": "Lies",
+    "Description": "Personification of lies",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 121,
@@ -2187,9 +2852,18 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Neikea",
     "Category": [],
-    "Description": "Quarrels",
+    "Description": "Personification of quarrels",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 122,
@@ -2197,9 +2871,18 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Amphillogiai",
     "Category": [],
-    "Description": "Disputes",
+    "Description": "Personification of disputes",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 123,
@@ -2207,9 +2890,20 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Makhai",
     "Category": [],
-    "Description": "Wars",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "Personification of wars",
+    "AlternateNames": [
+      "Machai"
+    ],
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 124,
@@ -2217,9 +2911,18 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Hysminai",
     "Category": [],
-    "Description": "Battles",
+    "Description": "Personification of fights and battles",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 125,
@@ -2227,9 +2930,18 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Androktasiai",
     "Category": [],
-    "Description": "Manslaughters",
+    "Description": "Personification of manslaughters",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 126,
@@ -2237,9 +2949,18 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Phonoi",
     "Category": [],
-    "Description": "Murders",
+    "Description": "Personification of murders",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 127,
@@ -2247,17 +2968,28 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Ate",
     "Category": [],
-    "Description": "Ruin",
+    "Description": "Personification of ruin",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 44,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 128,
     "Name": "Elpis",
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Elpis",
-    "Category": [],
-    "Description": "Hope",
+    "Category": [
+      "Goddess"
+    ],
+    "Description": "Minor goddess of hope",
     "AlternateNames": [],
     "Parentages": []
   },
@@ -2269,30 +3001,77 @@
     "Category": [],
     "Description": "Repopulator of humanity after the great flood.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 36,
+        "MotherID": 115,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 130,
     "Name": "Deucalion",
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Deucalion",
-    "Category": [],
+    "Category": [
+      "Mortal"
+    ],
     "Description": "Repopulator of humanity after the great flood.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 37,
+        "MotherID": 268,
+        "Sources": [
+          "Hesiod",
+          "Apollonius of Rhodes"
+        ],
+        "Notes": "Cited to Hesiod by Apollonius, it is not known who Pronoia is"
+      },
+      {
+        "FatherID": 37,
+        "MotherID": 131,
+        "Sources": [
+          "Homer",
+          "Acusilaus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 37,
+        "MotherID": 29,
+        "Sources": [
+          "Homer"
+        ],
+        "Notes": "Potentially a confusion between Prometheus's mother and alleged wife"
+      }
+    ]
   },
   {
     "ID": 131,
     "Name": "Hesione",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Hesione",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hesione_(Oceanid)",
     "Category": [
       "Oceanid",
       "Nymph"
     ],
-    "Description": "Oceanid wife of Prometheus",
+    "Description": "Oceanid wife of Deucalion according to Acusilaus",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Acusilaus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 132,
@@ -3927,5 +4706,15 @@
       "Primordial"
     ],
     "Description": "Orphic deity born at the beginning of creation"
+  },
+  {
+    "ID": 268,
+    "Name": "Pronoia",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "",
+    "Category": [],
+    "Description": "Mother of Deucalion according to some sources"
   }
 ]
