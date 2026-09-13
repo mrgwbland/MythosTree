@@ -273,13 +273,21 @@ def parse_file(
                 category = []
                 wikipedia = ""
 
+            parentages = []
+            if father_id or mother_id:
+                parentages.append({
+                    "FatherID": father_id,
+                    "MotherID": mother_id,
+                    "Sources": ["Traditional"],
+                    "Notes": ""
+                })
+
             record = {
                 "ID": person_id,
                 "Name": name,
                 "AlternateNames": [],
                 "Gender": gender,
-                "FatherID": father_id,
-                "MotherID": mother_id,
+                "Parentages": parentages,
                 "Wikipedia": wikipedia,
                 "Category": category,
                 "Description": desc,

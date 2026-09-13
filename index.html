@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <!-- Ambient Cosmic Glow Background -->
@@ -136,6 +136,20 @@
           </div>
         </div>
 
+        <!-- Mythological Source Selection Filter -->
+        <div class="kinship-sources-section">
+          <div class="kinship-sources-header">
+            <span class="kinship-sources-title">Filter by Classical Sources:</span>
+            <div class="kinship-sources-actions">
+              <button type="button" id="btn-kinship-select-all" class="btn-text-action">Select All</button>
+              <button type="button" id="btn-kinship-clear-all" class="btn-text-action">Clear</button>
+            </div>
+          </div>
+          <div class="kinship-source-chips" id="kinship-source-chips">
+            <!-- Dynamic source chips injected by app.js -->
+          </div>
+        </div>
+
         <button type="submit" id="btn-find-path" class="btn-primary">
           <span>Trace Kinship Path</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -189,22 +203,17 @@
           </div>
         </div>
 
-        <div class="form-row form-row-2">
-          <div class="form-group">
-            <label for="edit-father-input">Father</label>
-            <div class="select-wrapper">
-              <input type="text" id="edit-father-input" placeholder="Search father or leave blank..." autocomplete="off">
-              <input type="hidden" id="edit-father-id">
-              <div class="path-suggest hidden" id="edit-father-suggest"></div>
-            </div>
+        <!-- Parentage Traditions (Source-Attested Parent Pairs) -->
+        <div class="form-group">
+          <div class="parentages-header-row">
+            <label>Parentage Traditions (Parent Pairs & Sources)</label>
+            <button type="button" id="btn-add-parentage-pair" class="btn-add-parentage">
+              <span>➕</span> Add Parent Pair / Tradition
+            </button>
           </div>
-          <div class="form-group">
-            <label for="edit-mother-input">Mother</label>
-            <div class="select-wrapper">
-              <input type="text" id="edit-mother-input" placeholder="Search mother or leave blank..." autocomplete="off">
-              <input type="hidden" id="edit-mother-id">
-              <div class="path-suggest hidden" id="edit-mother-suggest"></div>
-            </div>
+          <p class="form-help-text">Record parent pairs with supporting classical texts (e.g. Hesiod, Homer, Apollodorus). Lineages with the most agreeing sources are presented first as the primary tradition.</p>
+          <div class="parentages-list" id="parentages-list">
+            <!-- Dynamic parentage repeater cards injected by app.js -->
           </div>
         </div>
 
@@ -240,6 +249,22 @@
     </div>
   </div>
 
+  <!-- Child Citation Details Modal -->
+  <div class="modal-backdrop hidden" id="citation-modal" role="dialog" aria-modal="true" aria-labelledby="citation-modal-title">
+    <div class="modal-card modal-card-medium">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-icon">📜</span>
+          <h2 id="citation-modal-title">Lineage & Citation Details</h2>
+        </div>
+        <button class="modal-close-btn" id="btn-close-citation-modal" aria-label="Close modal">&times;</button>
+      </div>
+      <div id="citation-modal-content" class="citation-modal-content">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notifications Container -->
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
@@ -269,6 +294,6 @@
   </footer>
 
   <!-- Application Core Script -->
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
