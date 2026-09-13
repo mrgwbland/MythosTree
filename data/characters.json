@@ -14,7 +14,15 @@
         "FatherID": 262,
         "MotherID": null,
         "Sources": [
-          "Hesiod Theogony"
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 263,
+        "MotherID": null,
+        "Sources": [
+          "Orphic Tradition"
         ],
         "Notes": ""
       }
@@ -35,7 +43,7 @@
         "FatherID": 262,
         "MotherID": null,
         "Sources": [
-          "Hesiod Theogony"
+          "Hesiod"
         ],
         "Notes": ""
       }
@@ -56,7 +64,7 @@
         "FatherID": null,
         "MotherID": null,
         "Sources": [
-          "Hesiod Theogony"
+          "Hesiod"
         ],
         "Notes": "Hesiod  considers Gaia to have come from nothing"
       }
@@ -77,7 +85,7 @@
         "FatherID": null,
         "MotherID": null,
         "Sources": [
-          "Hesiod Theogony"
+          "Hesiod"
         ],
         "Notes": "Came from nothing according to Hesiod"
       },
@@ -95,14 +103,23 @@
     "ID": 5,
     "Name": "Pontus",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Pontus",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Pontus_(mythology)",
     "Category": [
       "Primordial",
       "God"
     ],
-    "Description": "Primordial being, sea god",
+    "Description": "Primordial being, personification of the sea",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "Offspring of Gaia without aid of a father"
+      }
+    ]
   },
   {
     "ID": 6,
@@ -116,7 +133,40 @@
     "AlternateNames": [
       "Uranus"
     ],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 11,
+        "MotherID": null,
+        "Sources": [
+          "Titanomachy"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 266,
+        "MotherID": null,
+        "Sources": [
+          "Alcman"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 267,
+        "MotherID": 2,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 7,
@@ -130,7 +180,16 @@
     ],
     "Description": "Titan, god of the river Oceanos",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 8,
@@ -142,7 +201,16 @@
     ],
     "Description": "Titan",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 9,
@@ -154,7 +222,16 @@
     ],
     "Description": "Titan",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 10,
@@ -164,9 +241,18 @@
     "Category": [
       "Primordial"
     ],
-    "Description": "Primordial being, day",
+    "Description": "Primordial being, personification of day",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 11,
@@ -178,7 +264,24 @@
     ],
     "Description": "Primordial being, light",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 263,
+        "MotherID": null,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 12,
@@ -188,21 +291,39 @@
     "Category": [
       "Primordial"
     ],
-    "Description": "Primordial being, the sea",
+    "Description": "Primordial being, female personification of the sea",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 11,
+        "MotherID": 10,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 13,
     "Name": "Hyperion",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Hyperion",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hyperion_(Titan)",
     "Category": [
       "Titan"
     ],
-    "Description": "Titan, the Sun",
+    "Description": "Titan personification of the Sun",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 14,
@@ -214,7 +335,16 @@
     ],
     "Description": "Titan",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 15,
@@ -225,9 +355,21 @@
       "Titan",
       "God"
     ],
-    "Description": "Titan, god of harvest, and ruler of existence, for a t",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "Titan, god of harvest, and ruler of existence, for a time",
+    "AlternateNames": [
+      "Cronus",
+      "Cronos"
+    ],
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 16,
@@ -240,7 +382,16 @@
     ],
     "Description": "Titan, goddess of sight",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 17,
@@ -253,7 +404,16 @@
     ],
     "Description": "Titan, goddess of justice and law",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 18,
@@ -266,57 +426,100 @@
     ],
     "Description": "Titan, goddess of memory",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 19,
     "Name": "Phoebe",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Phoebe",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Phoebe_(Titaness)",
     "Category": [
       "Titan"
     ],
-    "Description": "Titan",
+    "Description": "Titan goddess of intellect and prophecy",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 20,
     "Name": "Tethys",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Tethys",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Tethys_(mythology)",
     "Category": [
-      "Titan",
-      "Oceanid",
-      "Nymph"
+      "Titan"
     ],
     "Description": "Titan, mother of the Oceanids",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 21,
     "Name": "Rhea",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Rhea",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Rhea_(mythology)",
     "Category": [
       "Titan"
     ],
     "Description": "Titan, consort of Kronos",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 22,
     "Name": "Brontes",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Brontes",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cyclopes",
     "Category": [
       "Cyclopes"
     ],
     "Description": "One of the Cyclopes- Thunder",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 23,
@@ -328,7 +531,16 @@
     ],
     "Description": "One of the Cyclopes- Lightning",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 24,
@@ -340,7 +552,16 @@
     ],
     "Description": "One of the Cyclopes- Bright",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 25,
@@ -352,7 +573,16 @@
     ],
     "Description": "One of the Hecantonchires",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 26,
@@ -364,7 +594,16 @@
     ],
     "Description": "One of the Hecantonchires",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 27,
@@ -378,7 +617,16 @@
     "AlternateNames": [
       "Briareus"
     ],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 6,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 28,
@@ -390,20 +638,39 @@
     ],
     "Description": "God of the Nile",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod",
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 29,
     "Name": "Clymene",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Clymene_(Oceanid)",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Clymene_(wife_of_Iapetus)",
     "Category": [
       "Oceanid",
       "Nymph"
     ],
-    "Description": "Two oceanids share the same name, but I only realised",
+    "Description": "One of the Oceanids,  wife of Iapetus. Not to be confused with another Oceanid sharing the same name.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 30,
@@ -411,11 +678,21 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Metis_(mythology)",
     "Category": [
-      "Goddess"
+      "Goddess",
+      "Oceanid"
     ],
-    "Description": "Goddess of wisdom and deep thought, later inhabitant o",
+    "Description": "Goddess of wisdom and deep thought, first wife of Zeus",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 31,
@@ -427,7 +704,16 @@
     ],
     "Description": "Titan, charioteer of the Sun",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 13,
+        "MotherID": 16,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 32,
@@ -439,7 +725,16 @@
     ],
     "Description": "Titaness moon charioteer",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 13,
+        "MotherID": 16,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 33,
@@ -452,19 +747,38 @@
     ],
     "Description": "Titaness goddess of the dawn",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 13,
+        "MotherID": 16,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 34,
     "Name": "Eurybia",
     "Gender": "Female",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Eurybia",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurybia_(mythology)",
     "Category": [
       "Goddess"
     ],
     "Description": "Goddess of mastery of the seas. (sailing etc?)",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 5,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 35,
@@ -474,9 +788,26 @@
     "Category": [
       "Titan"
     ],
-    "Description": "Titan, sentanced to hold up the sky.",
+    "Description": "Titan, sentenced to hold up the sky.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 14,
+        "MotherID": 29,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 14,
+        "MotherID": 265,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 36,
@@ -488,7 +819,24 @@
     ],
     "Description": "Titan of afterthought",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 14,
+        "MotherID": 29,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 14,
+        "MotherID": 265,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 37,
@@ -498,9 +846,26 @@
     "Category": [
       "Titan"
     ],
-    "Description": "Titan of foresight, sculptor of man, also gave man div",
+    "Description": "Titan of foresight, sculptor of man, gave man divine fire",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 14,
+        "MotherID": 29,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 14,
+        "MotherID": 265,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 38,
@@ -512,7 +877,24 @@
     ],
     "Description": "Monstrous serpent",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 4,
+        "MotherID": 3,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 57,
+        "Sources": [
+          "Homer"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 39,
@@ -522,9 +904,28 @@
     "Category": [
       "Moirai"
     ],
-    "Description": "Doom itself.(Or more optimistically, fate) Even feared",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "Personification of doom (or more optimistically, fate). Even feared by the gods",
+    "AlternateNames": [
+      "Morus"
+    ],
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "Gaia bore him herself according to Hesiod"
+      },
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 40,
@@ -534,17 +935,46 @@
     "Category": [],
     "Description": "Deceit",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Cicero"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 41,
     "Name": "Geras",
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Geras",
-    "Category": [],
-    "Description": "Old age",
+    "Category": [
+      "God"
+    ],
+    "Description": "God of old age",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hyginus",
+          "Cicero"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "Nyx bore him herself according to Hesiod"
+      }
+    ]
   },
   {
     "ID": 42,
@@ -552,19 +982,48 @@
     "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Oizys",
     "Category": [],
-    "Description": "Misery",
+    "Description": "Personification of misery",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hyginus",
+          "Cicero"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 43,
     "Name": "Momos",
     "Gender": "Male",
-    "Wikipedia": "https://en.wikipedia.org/wiki/Momos",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Momus",
     "Category": [],
-    "Description": "Mockery",
-    "AlternateNames": [],
-    "Parentages": []
+    "Description": "Personification of satire and mockery",
+    "AlternateNames": [
+      "Momus"
+    ],
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 44,
@@ -576,7 +1035,16 @@
     ],
     "Description": "Goddess of strife and discord",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 45,
@@ -586,9 +1054,34 @@
     "Category": [
       "Goddess"
     ],
-    "Description": "Goddess who enacts retribution against those who show",
+    "Description": "Goddess who enacts retribution against those who show hubris before the gods.",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 7,
+        "MotherID": null,
+        "Sources": [
+          "Pausanias"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 46,
@@ -598,7 +1091,16 @@
     "Category": [],
     "Description": "Ferryman of Hades, takes souls over the Styx",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 266,
+        "MotherID": null,
+        "Sources": [
+          "Hesychius"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 47,
@@ -606,9 +1108,22 @@
     "Gender": "Male",
     "Wikipedia": "https://en.wikipedia.org/wiki/Hypnos",
     "Category": [],
-    "Description": "Sleep",
+    "Description": "Personification of sleep",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 2,
+        "Sources": [],
+        "Notes": ""
+      },
+      {
+        "FatherID": 1,
+        "MotherID": 2,
+        "Sources": [],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 48,
@@ -617,8 +1132,20 @@
     "Wikipedia": "https://en.wikipedia.org/wiki/Phobetor",
     "Category": [],
     "Description": "Being that creates nightmares",
-    "AlternateNames": [],
-    "Parentages": []
+    "AlternateNames": [
+      "Icelus",
+      "Icelos"
+    ],
+    "Parentages": [
+      {
+        "FatherID": 47,
+        "MotherID": null,
+        "Sources": [
+          "Ovid"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 49,
@@ -628,7 +1155,16 @@
     "Category": [],
     "Description": "Being that appears as inanimate objects in dreams",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 47,
+        "MotherID": null,
+        "Sources": [
+          "Ovid"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 50,
@@ -640,7 +1176,16 @@
     ],
     "Description": "God of dreams",
     "AlternateNames": [],
-    "Parentages": []
+    "Parentages": [
+      {
+        "FatherID": 47,
+        "MotherID": null,
+        "Sources": [
+          "Ovid"
+        ],
+        "Notes": ""
+      }
+    ]
   },
   {
     "ID": 51,
@@ -788,8 +1333,8 @@
         "FatherID": 15,
         "MotherID": 21,
         "Sources": [
-          "Hesiod Theogony",
-          "Homer Iliad"
+          "Hesiod",
+          "Homer"
         ],
         "Notes": "Theogony classical Titanomachy lineage"
       },
@@ -797,7 +1342,7 @@
         "FatherID": null,
         "MotherID": 3,
         "Sources": [
-          "Orphic Fragments"
+          "Orphic Tradition"
         ],
         "Notes": "Orphic cosmology alternate birth narrative"
       }
@@ -3178,11 +3723,102 @@
     "Name": "Chaos",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": null,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": "The first thing to exist according to Hesiod"
+      },
+      {
+        "FatherID": 263,
+        "MotherID": null,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Chaos_(cosmogony)#Greco-Roman_tradition",
     "Category": [
       "Primordial"
     ],
     "Description": "According to some myths, Chaos was the first being to exist"
+  },
+  {
+    "ID": 263,
+    "Name": "Chronos",
+    "AlternateNames": [
+      "Chronus"
+    ],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "",
+    "Category": [],
+    "Description": "Personification of time, not to be confused with Cronus the Titan god"
+  },
+  {
+    "ID": 264,
+    "Name": "Ananke",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": null,
+        "Sources": [
+          "Orphic Tradition"
+        ],
+        "Notes": "Ananke was considered a self formed being who emerged at the dawn of creation"
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Ananke",
+    "Category": [],
+    "Description": "Personification of inevitability, compulsion and necessity"
+  },
+  {
+    "ID": 265,
+    "Name": "Asia",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Asia_(Oceanid)",
+    "Category": [
+      "Oceanid"
+    ],
+    "Description": ""
+  },
+  {
+    "ID": 266,
+    "Name": "Acmon",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Acmon_(father_of_Uranus)",
+    "Category": [],
+    "Description": "Father of Uranus in some sources"
+  },
+  {
+    "ID": 267,
+    "Name": "Phanes",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "",
+    "Category": [
+      "Primordial"
+    ],
+    "Description": "Orphic deity born at the beginning of creation"
   }
 ]
