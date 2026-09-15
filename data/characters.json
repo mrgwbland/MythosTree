@@ -2963,7 +2963,7 @@
   {
     "ID": 127,
     "Name": "Ate",
-    "Gender": "Male",
+    "Gender": "Female",
     "Wikipedia": "https://en.wikipedia.org/wiki/Ate",
     "Category": [],
     "Description": "Personification of ruin",
@@ -2974,6 +2974,14 @@
         "MotherID": 44,
         "Sources": [
           "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 61,
+        "MotherID": null,
+        "Sources": [
+          "Homer"
         ],
         "Notes": ""
       }
@@ -6422,8 +6430,10 @@
       }
     ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Agamemnon",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "King of Mycenae who commanded the Achaeans during the Trojan War"
   },
   {
     "ID": 286,
@@ -6782,7 +6792,7 @@
       "Naiad",
       "Nymph"
     ],
-    "Description": ""
+    "Description": "Wife of Icarius, mother of Penelope"
   },
   {
     "ID": 305,
@@ -6829,19 +6839,51 @@
     "Name": "Oebalus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 305,
+        "MotherID": null,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 350,
+        "MotherID": null,
+        "Sources": [
+          "Dictys"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 351,
+        "MotherID": null,
+        "Sources": [
+          "Pausanias"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Oebalus",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "A king of Sparta"
   },
   {
     "ID": 308,
     "Name": "Bateia",
-    "AlternateNames": [],
+    "AlternateNames": [
+      "Myrina",
+      "Batea"
+    ],
     "Gender": "Female",
     "Parentages": [],
     "Wikipedia": "https://en.wikipedia.org/wiki/Bateia",
-    "Category": [],
+    "Category": [
+      "Naiad"
+    ],
     "Description": ""
   },
   {
@@ -6849,10 +6891,30 @@
     "Name": "Criasus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 278,
+        "MotherID": 313,
+        "Sources": [
+          "Apollodorus",
+          "Hyginus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 278,
+        "MotherID": 314,
+        "Sources": [
+          "Euripides"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Criasus",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "A king of Argos"
   },
   {
     "ID": 310,
@@ -6861,18 +6923,47 @@
     "Gender": "Female",
     "Parentages": [],
     "Wikipedia": "https://en.wikipedia.org/wiki/Melantho",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Argive Queen as wife of Criasus"
   },
   {
     "ID": 311,
     "Name": "Phoroneus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 163,
+        "MotherID": null,
+        "Sources": [
+          "Pausanias"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 163,
+        "MotherID": 164,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 163,
+        "MotherID": 352,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Phoroneus",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Culture-hero of the Argolid, fire-bringer, law giver, and primordial king of Argos"
   },
   {
     "ID": 312,
@@ -6884,15 +6975,26 @@
     "Gender": "Female",
     "Parentages": [],
     "Wikipedia": "https://en.wikipedia.org/wiki/Sose_(mythology)",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Queen of Argos as wife of King Triopas"
   },
   {
     "ID": 313,
     "Name": "Evadne",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 353,
+        "MotherID": 354,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Evadne",
     "Category": [],
     "Description": "Daughter of the river god Strymon"
@@ -6902,21 +7004,58 @@
     "Name": "Peitho",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": null,
+        "MotherID": 52,
+        "Sources": [
+          "Sappho",
+          "Aeschylus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hesiod"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 127,
+        "Sources": [
+          "Aeschylus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Peitho",
     "Category": [
       "Oceanid"
     ],
-    "Description": ""
+    "Description": "Personification of persuasion."
   },
   {
     "ID": 315,
     "Name": "Niobe",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 311,
+        "MotherID": 355,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Niobe_(Argive)",
-    "Category": [],
+    "Category": [
+      "Mortal"
+    ],
     "Description": ""
   },
   {
@@ -6969,20 +7108,43 @@
     "Name": "Philonoe",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 356,
+        "MotherID": null,
+        "Sources": [
+          "Strabo"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Philonoe",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "First wife of Bellerophon"
   },
   {
     "ID": 320,
     "Name": "Atreus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 240,
+        "MotherID": 357,
+        "Sources": [
+          "Apollodorus",
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Atreus",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "King of Mycenae"
   },
   {
     "ID": 321,
@@ -6991,38 +7153,107 @@
     "Gender": "Female",
     "Parentages": [],
     "Wikipedia": "https://en.wikipedia.org/wiki/Aerope",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Cretan princess"
   },
   {
     "ID": 322,
     "Name": "Tyndareus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 307,
+        "MotherID": 306,
+        "Sources": [
+          "Pausanias"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 305,
+        "MotherID": 306,
+        "Sources": [
+          "Tzetzes"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Tyndareus",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Spartan king"
   },
   {
     "ID": 323,
     "Name": "Leda",
-    "AlternateNames": [],
+    "AlternateNames": [
+      "Lede"
+    ],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 359,
+        "MotherID": null,
+        "Sources": [
+          "Euripides"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 360,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": null,
+        "MotherID": 361,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 299,
+        "MotherID": 362,
+        "Sources": [
+          "Alcman"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Leda_(mythology)",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Aetolian princess and Queen of Sparta who was seduced by Zeus in swan form"
   },
   {
     "ID": 324,
     "Name": "Chryse",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 363,
+        "MotherID": null,
+        "Sources": [
+          "Pausanias"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Chryse_(mythology)",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "A Minyan princess"
   },
   {
     "ID": 325,
@@ -7032,7 +7263,7 @@
     "Parentages": [],
     "Wikipedia": "https://en.wikipedia.org/wiki/Malus_(disambiguation)",
     "Category": [],
-    "Description": ""
+    "Description": "Consort of the muse Erato"
   },
   {
     "ID": 326,
@@ -7049,8 +7280,10 @@
         "Notes": "Also mentions a mother Hippodamia which I am yet to properly find out who it is"
       }
     ],
-    "Wikipedia": "",
-    "Category": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Astydameia",
+    "Category": [
+      "Mortal"
+    ],
     "Description": ""
   },
   {
@@ -7058,9 +7291,20 @@
     "Name": "Amphitryon",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
-    "Wikipedia": "",
-    "Category": [],
+    "Parentages": [
+      {
+        "FatherID": 328,
+        "MotherID": 326,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Amphitryon",
+    "Category": [
+      "Mortal"
+    ],
     "Description": "King of Tiryns in Argolis."
   },
   {
@@ -7068,9 +7312,22 @@
     "Name": "Alcaeus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 343,
+        "MotherID": 349,
+        "Sources": [
+          "Apollodorus",
+          "Hesiod",
+          "Herodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Alcaeus_(mythology)",
-    "Category": [],
+    "Category": [
+      "Mortal"
+    ],
     "Description": "A Mycenaean prince."
   },
   {
@@ -7079,7 +7336,7 @@
     "AlternateNames": [],
     "Gender": "Female",
     "Parentages": [],
-    "Wikipedia": "https://en.wikipedia.org/wiki/Alcaeus_(mythology)",
+    "Wikipedia": "https://en.wikipedia.org/wiki/Argyphia_(mythology)",
     "Category": [
       "Mortal"
     ],
@@ -7269,15 +7526,17 @@
     "Parentages": [
       {
         "FatherID": 284,
-        "MotherID": null,
+        "MotherID": 340,
         "Sources": [
           "Homer"
         ],
         "Notes": ""
       }
     ],
-    "Wikipedia": "",
-    "Category": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Amythaon",
+    "Category": [
+      "Mortal"
+    ],
     "Description": "Son of Cretheus"
   },
   {
@@ -7285,7 +7544,16 @@
     "Name": "Tyro",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 271,
+        "MotherID": 367,
+        "Sources": [
+          "Diodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Tyro",
     "Category": [
       "Mortal"
@@ -7297,20 +7565,52 @@
     "Name": "Periphas",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 368,
+        "MotherID": 369,
+        "Sources": [
+          "Diodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Periphas",
-    "Category": [],
+    "Category": [
+      "Mortal"
+    ],
     "Description": ""
   },
   {
     "ID": 342,
     "Name": "Astyaguia",
-    "AlternateNames": [],
+    "AlternateNames": [
+      "Astyagyia"
+    ],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 249,
+        "MotherID": 250,
+        "Sources": [
+          "Pindar"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 249,
+        "MotherID": null,
+        "Sources": [
+          "Diodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Astyaguia",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Thessalin Princess"
   },
   {
     "ID": 343,
@@ -7338,7 +7638,17 @@
     "Name": "Eurydice",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 370,
+        "MotherID": 371,
+        "Sources": [
+          "Apollonius of Rhodes",
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Eurydice_(daughter_of_Lacedaemon)",
     "Category": [
       "Mortal"
@@ -7379,10 +7689,29 @@
     "Name": "Eupalamus",
     "AlternateNames": [],
     "Gender": "Male",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 372,
+        "MotherID": null,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      },
+      {
+        "FatherID": 302,
+        "MotherID": null,
+        "Sources": [
+          "Diodorus"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Eupalamus",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Athenian Prince"
   },
   {
     "ID": 348,
@@ -7391,17 +7720,386 @@
     "Gender": "Female",
     "Parentages": [],
     "Wikipedia": "https://en.wikipedia.org/wiki/Alcippe_(mythology)",
-    "Category": [],
-    "Description": ""
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Mother of Daedalus"
   },
   {
     "ID": 349,
     "Name": "Andromeda",
     "AlternateNames": [],
     "Gender": "Female",
-    "Parentages": [],
+    "Parentages": [
+      {
+        "FatherID": 374,
+        "MotherID": 375,
+        "Sources": [
+          "Apollodorus",
+          "Hyginus",
+          "Ovid"
+        ],
+        "Notes": ""
+      }
+    ],
     "Wikipedia": "https://en.wikipedia.org/wiki/Andromeda_(mythology)",
-    "Category": [],
+    "Category": [
+      "Mortal"
+    ],
     "Description": "Wife of Perseus"
+  },
+  {
+    "ID": 350,
+    "Name": "Argalus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [
+      {
+        "FatherID": 376,
+        "MotherID": 377,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Argalus",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "King of Sparta"
+  },
+  {
+    "ID": 351,
+    "Name": "Cynortas",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [
+      {
+        "FatherID": 376,
+        "MotherID": 377,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cynortas",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "King of Sparta"
+  },
+  {
+    "ID": 352,
+    "Name": "Argia",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [
+      {
+        "FatherID": 7,
+        "MotherID": 20,
+        "Sources": [
+          "Hyginus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Argia_(mythology)",
+    "Category": [
+      "Oceanid"
+    ],
+    "Description": "Oceanid mother of Phoroneus"
+  },
+  {
+    "ID": 353,
+    "Name": "Strymon",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Strymon_(mythology)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 354,
+    "Name": "Neaera",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Neaera_(mythology)",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Mother of Evadne by Strymon"
+  },
+  {
+    "ID": 355,
+    "Name": "Teledice",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Teledice",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 356,
+    "Name": "Iobates",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Iobates",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 357,
+    "Name": "Hippodamia",
+    "AlternateNames": [
+      "Hippodamea",
+      "Hippodameia"
+    ],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Hippodamia_(daughter_of_Oenomaus)",
+    "Category": [],
+    "Description": "Daughter of Oenomaus, Queen of Pisa and wife of Pelops"
+  },
+  {
+    "ID": 358,
+    "Name": "Catreus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Catreus",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "King of Crete"
+  },
+  {
+    "ID": 359,
+    "Name": "Thestius",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Thestius",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": "Aetolian king"
+  },
+  {
+    "ID": 360,
+    "Name": "Leucippe",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Leucippe",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 361,
+    "Name": "Eurythemis",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Eurythemis",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 362,
+    "Name": "Laophonte",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Laophonte_(mythology)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 363,
+    "Name": "Almus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Almus_(son_of_Sisyphus)",
+    "Category": [],
+    "Description": "King of Orchomenus"
+  },
+  {
+    "ID": 364,
+    "Name": "Eurystheus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [
+      {
+        "FatherID": 174,
+        "MotherID": null,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Astydameia",
+    "Category": [],
+    "Description": "King of Tiryns"
+  },
+  {
+    "ID": 365,
+    "Name": "Nicippe",
+    "AlternateNames": [
+      "Antibia",
+      "Archippe"
+    ],
+    "Gender": "Female",
+    "Parentages": [
+      {
+        "FatherID": 240,
+        "MotherID": 357,
+        "Sources": [],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Nicippe",
+    "Category": [],
+    "Description": "A Pisatian princess as daughter of King Pelops and Hippodamia, became Queen of Mycenae after marrying King Sthenelus."
+  },
+  {
+    "ID": 366,
+    "Name": "Oenomaus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Oenomaus",
+    "Category": [
+      "Mortal"
+    ],
+    "Description": ""
+  },
+  {
+    "ID": 367,
+    "Name": "Alcidice",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Alcidice",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 368,
+    "Name": "Lapithes",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Lapithes_(hero)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 369,
+    "Name": "Orsinome",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Orsinome_(mythology)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 370,
+    "Name": "Lacedaemon",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Lacedaemon_(mythology)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 371,
+    "Name": "Sparta",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Sparta_(mythology)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 372,
+    "Name": "Metion",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Metion",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 373,
+    "Name": "Daedalus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [
+      {
+        "FatherID": 347,
+        "MotherID": 348,
+        "Sources": [
+          "Apollodorus"
+        ],
+        "Notes": ""
+      }
+    ],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Daedalus",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 374,
+    "Name": "Cepheus",
+    "AlternateNames": [],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cepheus_(father_of_Andromeda)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 375,
+    "Name": "Cassiopeia",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Cassiopeia_(mother_of_Andromeda)",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 376,
+    "Name": "Amyklas",
+    "AlternateNames": [
+      "Amyclas"
+    ],
+    "Gender": "Male",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Amyclas_of_Sparta",
+    "Category": [],
+    "Description": ""
+  },
+  {
+    "ID": 377,
+    "Name": "Diomede",
+    "AlternateNames": [],
+    "Gender": "Female",
+    "Parentages": [],
+    "Wikipedia": "https://en.wikipedia.org/wiki/Diomede",
+    "Category": [],
+    "Description": ""
   }
 ]
